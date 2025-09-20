@@ -4,7 +4,7 @@ File: SiC_analysis_main.py
 Created: 2025-SEP-16
 @author: Rebecca Frederick
 Deku Lab Silicon Carbide Review Data Analysis
-Last Updated: 2025-SEP-18 by Rebecca A. Frederick
+Last Updated: 2025-SEP-19 by Rebecca A. Frederick
 """
 
 # Include packages required for data analysis functions:
@@ -376,6 +376,12 @@ def ArticleList_Analysis06(ArticleList_DF):
     #
     return DF3
 
+#-----------------------------------------------------------------------------
+def Neural_InVivo_Analysis00(Neural_InVivo_DF):
+    #
+    
+    #
+    return 
 
 
 #-----------------------------------------------------------------------------

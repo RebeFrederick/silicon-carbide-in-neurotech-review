@@ -4,7 +4,7 @@ File: SiC_analysis_main.py
 Created: 2024-DEC-10
 @author: Rebecca Frederick
 Deku Lab Silicon Carbide Review Data Analysis
-Last Updated: 2025-SEP-18 by Rebecca A. Frederick
+Last Updated: 2025-SEP-19 by Rebecca A. Frederick
 
 
 """
@@ -86,12 +86,12 @@ ArticleList_FileName = '0_SiC-Review_Included-Articles_Master-List_Stage3_reduce
 #ArticleList_FileName = '0_SiC-Review_Included-Articles_Master-List.csv'
 ReviewsList_FileName = '0_SiC-Review_Included-Articles_Review-List_Stage3_reduced.csv'
 #ReviewsList_FileName = '0_SiC-Review_Included-Articles_Reviews-List.csv'
-NE_data_InVivo_FileName = 'NeuralEng_Details_InVivo.csv'
+Neural_InVivo_FileName = 'NeuralEng_Details_All_InVivo.csv'
 #-----------------------------------------------------------------------------
 #
 ArticleList_Location = FolderName + ArticleList_FileName
 ReviewsList_Location = FolderName + ReviewsList_FileName
-NE_data_InVivo_Location = FolderName + NE_data_InVivo_FileName
+NE_data_InVivo_Location = FolderName + Neural_InVivo_FileName
 #
 
 
@@ -104,21 +104,23 @@ NE_data_InVivo_Location = FolderName + NE_data_InVivo_FileName
 # Read Raw Data CSV Files Into New DataFrames:
 ArticleList_DF = pd.read_csv(ArticleList_Location)
 ReviewsList_DF = pd.read_csv(ReviewsList_Location)
-NE_data_InVivo_DF = pd.read_csv(NE_data_InVivo_Location)
+Neural_InVivo_DF = pd.read_csv(NE_data_InVivo_Location)
 #
+# Force pubmed_id to text from number
+ArticleList_DF['pubmed_id'] = ArticleList_DF['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
+ReviewsList_DF['pubmed_id'] = ReviewsList_DF['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
+Neural_InVivo_DF['pubmed_id'] = Neural_InVivo_DF['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
 
 
 #-----------------------------------------------------------------------------
 #                               SECTION 4
 #-----------------------------------------------------------------------------
-# Format and Add Information to ArticleList_DF:
+# Format and Add Information to ArticleList_DF dataframe:
 #-----------------------------------------------------------------------------
 # Convert Year Column to DateTime Data Type:
 ArticleList_DF['year'] = pd.to_datetime(ArticleList_DF['year'], format='%Y').dt.year
 # Check Imported Data for Article List:
 ArticleList_DTypes_atLoad = ArticleList_DF.dtypes    # pull initial list of data types
-# Force pubmed_id to text from number
-ArticleList_DF['pubmed_id'] = ArticleList_DF['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
 # Add publication decade data column to ArticleList_DF
 ArticleList_DF['pub_decade'] = ArticleList_DF['year'] // 10 * 10    # creates new year values by decades
 #-----------------------------------------------------------------------------
@@ -177,6 +179,23 @@ ArticleList_DataTypes = ArticleList_DF.dtypes    # pull new list of data types
 #-----------------------------------------------------------------------------
 # !!!!!!!  in progress 2025 Sept
 #testgroup01 = ArticleList_DF.groupby('Study_Category')['SiC_Type'].sum()
+
+#-----------------------------------------------------------------------------
+# Format and Add Information to Neural dataframes:
+#-----------------------------------------------------------------------------
+# Change index to refID:
+Neural_InVivo_DF = Neural_InVivo_DF.set_index(['refID'])
+# !!!!!!!  Add other Neural dataframes
+
+# Update column data types for Neural_InVivo_DF:
+Neural_InVivo_DF['Species'] = Neural_InVivo_DF['Species'].astype('category')
+Neural_InVivo_DF['Strain'] = Neural_InVivo_DF['Strain'].astype('category')
+Neural_InVivo_DF['Sex'] = Neural_InVivo_DF['Sex'].astype('category')
+Neural_InVivo_DF['Implant_Location'] = Neural_InVivo_DF['Implant_Location'].astype('category')
+Neural_InVivo_DF['DeviceID'] = Neural_InVivo_DF['DeviceID'].astype('category')
+Neural_InVivo_DF['Device_Substrate'] = Neural_InVivo_DF['Device_Substrate'].astype('category')
+Neural_InVivo_DF['ElectrodeSite_Material'] = Neural_InVivo_DF['ElectrodeSite_Material'].astype('category')
+
 
 
 #-----------------------------------------------------------------------------
