@@ -13,7 +13,6 @@ Code developed using Python (v3.12.7) <br/>
 Python Packages:
 - kaleido (v1.0.0)
 - matplotlib (v3.10.0)
-- os (from Python v3.12.7)
 - pandas (v2.2.3)
 - plotly (v6.1.2)
 - statsmodels (v0.14.5)
