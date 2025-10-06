@@ -1,9 +1,9 @@
 # Silicon-Carbide-in-Neurotech-Review
-Data analysis and visualization as part of publication: "State-of-the-Art Review of the Use of Silicon Carbide in Implanted Neural Interfaces" <br/>
+Data analysis and visualization as part of publication: "State-of-the-Art Review and Meta Analysis of the Use of Silicon Carbide in Implanted Medical Devices" <br/>
 (doi: TBD) <br/>
 Deku Lab 2025 - Rebecca A. Frederick, Ph.D. <br/>
 READ ME for Data Analysis and Data Visualization Files <br/>
-Updated: 2025-SEP-30 by Rebecca A. Frederick
+Updated: 2025-OCT-06 by Rebecca A. Frederick
 
 
 # Code Build
@@ -18,13 +18,13 @@ Python Packages:
 - statsmodels (v0.14.5)
 
 
-# File: "SiC_analysis_main.py"
-1. Installs and Initializes Python Packages
+# Main Analysis File: "SiC_analysis_main.py"
+1. Initializes Python Packages
 2. Loads Raw Data Files <br/>
    - "0_SiC-Review_Included-Articles-Master-List.csv"
    - "0_SiC-Review_Included-Articles-Reviews-List.csv"
 3. Creates Variables and Data Frames
-4. Creates Interactive and Static Plots
+4. Creates Interactive and Static Data Visualizations
 
 
 ## Data File: "0_SiC-Review_Included-Articles-List.csv"
