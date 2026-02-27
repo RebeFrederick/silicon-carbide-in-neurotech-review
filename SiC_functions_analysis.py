@@ -4,20 +4,31 @@ File: SiC_analysis_main.py
 Created: 2025-SEP-16
 @author: Rebecca Frederick
 Deku Lab Silicon Carbide Review Data Analysis
-Last Updated: 2025-SEP-19 by Rebecca A. Frederick
+Last Updated: 2026-FEB-26 by Rebecca A. Frederick
 """
 
 # Include packages required for data analysis functions:
-import os   # used to get current working directory
+#import os   # used to get current working directory
 import pandas as pd   # used to read raw data csv files
-import plotly.express as px   # used to create interactive data visualizations
-import plotly.graph_objects as go   # used to create interactive data visualizations
-import plotly.io as pio  # used for creating plot templates
-import matplotlib.pyplot as plt  # used to make static plots
-import matplotlib.ticker as ticker # used to setup minor ticks in plots
-from statsmodels.graphics.mosaicplot import mosaic  # used for mosaic plots only
-from PIL import Image
+#import plotly.express as px   # used to create interactive data visualizations
+#import plotly.graph_objects as go   # used to create interactive data visualizations
+#import plotly.io as pio  # used for creating plot templates
+#mport matplotlib.pyplot as plt  # used to make static plots
+#import matplotlib.ticker as ticker # used to setup minor ticks in plots
+#from statsmodels.graphics.mosaicplot import mosaic  # used for mosaic plots only
+#from PIL import Image
 
+#-----------------------------------------------------------------------------
+#                        LIST OF FUNCTIONS IN FILE
+#-----------------------------------------------------------------------------
+# ArticleList_Analysis00a
+# ArticleList_Analysis00b
+# ArticleList_Analysis01
+# ArticleList_Analysis02
+# ArticleList_Analysis03
+# ArticleList_Analysis04
+# ArticleList_Analysis05
+# ArticleList_Analysis06
 
 #-----------------------------------------------------------------------------
 #                            DATA ANALYSIS
@@ -377,11 +388,20 @@ def ArticleList_Analysis06(ArticleList_DF):
     return DF3
 
 #-----------------------------------------------------------------------------
-def Neural_InVivo_Analysis00(Neural_InVivo_DF):
-    #
-    
-    #
-    return 
+
+# def Neuro_InVivo_Analysis01(Neural_InVivo_DF01):
+#     # !!! in-progress 
+#     Neuro_InVivoDF01_sum01 = Neural_InVivo_DF01.groupby(['Species','Sex'])['SubjectCount'].sum().reset_index()
+#     #
+#     return Neuro_InVivoDF01_sum01
+
+# #-----------------------------------------------------------------------------
+# def Neuro_InVivo_Analysis02(Neural_InVivo_DF01):
+#     # !!! in-progress 
+#     Neuro_InVivoDF01_sum02 = Neural_InVivo_DF01.groupby(['Implant_Region','Species','Sex'])['SubjectCount'].sum().reset_index()
+#     #
+#     return Neuro_InVivoDF01_sum02
+
 
 
 #-----------------------------------------------------------------------------
