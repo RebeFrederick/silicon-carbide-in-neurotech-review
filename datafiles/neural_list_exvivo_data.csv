@@ -1,0 +1,8 @@
+refID,doi,year,pub_decade,Reported_SiC,Reported_Category,Reported_Data,Tissue_Type,Species,SiC-or-Control_Type,Assessment,Tissue_Ablation,Frequency_shift_kHz_per1mg/dL,Activated_Platelets_count/mm^2
+"Nguyen, T 2022a",10.1021/acsnano.2c03188,2022,2020,['3C-SiC'],['Neural'],"['Animal', 'Material Properties', 'Fabrication', 'Benchtop', 'In Vitro', 'Ex Vivo']",Heart,Rat,3C-SiC,Thermal Ablation,"80degC, 2W",,
+"Nguyen, T 2022a",10.1021/acsnano.2c03188,2022,2020,['3C-SiC'],['Neural'],"['Animal', 'Material Properties', 'Fabrication', 'Benchtop', 'In Vitro', 'Ex Vivo']",Muscle,Chicken,3C-SiC,Thermal Ablation,"80degC, 40V, 60s, Sinusoidal",,
+"Saddow, S 2014a",10.1149/06107.0101ecst,2014,2010,['3C-SiC'],"['Neural', 'Biosensors']","['Animal', 'Material Properties', 'Fabrication', 'Benchtop', 'In Vitro', 'Ex Vivo']",Blood,Pig,4H-SiC,Glucose Detection,,67,
+"Saddow, S 2014b",10.1109/NMDC.2014.6997419,2014,2010,"['a-SiC', '3C-SiC']","['Neural', 'Biosensors']","['Animal', 'Fabrication', 'Benchtop', 'In Vitro', 'Ex Vivo']",Blood,Pig,Si,Hemolysis,,,7550
+"Saddow, S 2014b",10.1109/NMDC.2014.6997419,2014,2010,"['a-SiC', '3C-SiC']","['Neural', 'Biosensors']","['Animal', 'Fabrication', 'Benchtop', 'In Vitro', 'Ex Vivo']",Blood,Pig,a-SiC,Hemolysis,,,4920
+"Saddow, S 2014b",10.1109/NMDC.2014.6997419,2014,2010,"['a-SiC', '3C-SiC']","['Neural', 'Biosensors']","['Animal', 'Fabrication', 'Benchtop', 'In Vitro', 'Ex Vivo']",Blood,Pig,SiO2,Hemolysis,,,14390
+"Saddow, S 2014b",10.1109/NMDC.2014.6997419,2014,2010,"['a-SiC', '3C-SiC']","['Neural', 'Biosensors']","['Animal', 'Fabrication', 'Benchtop', 'In Vitro', 'Ex Vivo']",Blood,Pig,3C-SiC,Hemolysis,,,180
