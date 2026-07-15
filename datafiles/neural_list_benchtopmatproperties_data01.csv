@@ -1,0 +1,67 @@
+refID,doi,year,pub_decade,SiC_Type,Substrate,SiC_Thickness_um,Shank_Tip_Angle_degrees,Shank_Width_um,Shank_Thickness_um,Shank_Xsection_Area_um^2,Moment_Inertia_um^4,Shank_Length_mm,SubjectCount,Species,Tissue_or_Material,Insertions_Successful_count,Insertions_Attempts_count,Insertion_Success_percent,Insertion_Speed_um/s,Insertion_Force_mN,Buckling_Force_mN
+"Deku, F 2018b",10.3390/mi9100480,2018,2010,a-SiC,Polyimide,1,,7,6,42,126,2,1,Rat,Cortex,,,,50,0.35,
+"Deku, F 2018b",10.3390/mi9100480,2018,2010,a-SiC,Polyimide,1,,7,6,42,126,2,<NA>,Glass,Glass,,,,50,,0.69
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,8,7,6,42,126,0.5,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,3,,,5,,0.71
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,8,7,6,42,126,1,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,5,,,5,,0.15
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,8,7,6,42,126,1.5,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,4,,,5,,0.09
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,8,7,6,42,126,2,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,4,,,5,,0.04
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,4,22,20,4,80,107,0.5,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,2,,,5,,0.5
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,4,22,20,4,80,107,1,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,3,,,5,,0.13
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,4,22,20,4,80,107,2,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,3,,,5,,0.03
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,22,20,6,120,360,0.5,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,3,,,5,,1.26
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,22,20,6,120,360,1,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,3,,,5,,0.37
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,22,20,6,120,360,1.5,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,3,,,5,,0.21
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,22,20,6,120,360,2,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,2,,,5,,0.12
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,8,7,6,42,126,2,<NA>,Agarose Gel,Agarose Gel,3,,,25,0.015,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,8,7,6,42,126,2,<NA>,Agarose Gel,Agarose Gel,0,,,50,,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,8,7,6,42,126,2,<NA>,Agarose Gel,Agarose Gel,2,,,100,0.038,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,8,7,6,42,126,2,<NA>,Agarose Gel,Agarose Gel,3,,,500,0.054,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,8,7,6,42,126,2,<NA>,Agarose Gel,Agarose Gel,0,,,1000,,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,11,10,6,60,180,2,<NA>,Agarose Gel,Agarose Gel,1,,,25,0.02,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,11,10,6,60,180,2,<NA>,Agarose Gel,Agarose Gel,3,,,50,0.035,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,11,10,6,60,180,2,<NA>,Agarose Gel,Agarose Gel,2,,,100,0.04,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,11,10,6,60,180,2,<NA>,Agarose Gel,Agarose Gel,1,,,500,0.055,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,11,10,6,60,180,2,<NA>,Agarose Gel,Agarose Gel,0,,,1000,,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,4,22,20,4,80,107,2,<NA>,Agarose Gel,Agarose Gel,3,,,25,0.276,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,4,22,20,4,80,107,2,<NA>,Agarose Gel,Agarose Gel,1,,,50,0.43,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,4,22,20,4,80,107,2,<NA>,Agarose Gel,Agarose Gel,7,,,100,0.236,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,4,22,20,4,80,107,2,<NA>,Agarose Gel,Agarose Gel,5,,,500,0.296,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,4,22,20,4,80,107,2,<NA>,Agarose Gel,Agarose Gel,6,,,1000,0.708,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,22,20,6,120,360,2,<NA>,Agarose Gel,Agarose Gel,8,,,25,0.112,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,22,20,6,120,360,2,<NA>,Agarose Gel,Agarose Gel,3,,,50,0.122,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,22,20,6,120,360,2,<NA>,Agarose Gel,Agarose Gel,9,,,100,0.119,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,22,20,6,120,360,2,<NA>,Agarose Gel,Agarose Gel,4,,,500,0.631,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,22,20,6,120,360,2,<NA>,Agarose Gel,Agarose Gel,0,,,1000,,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,22,20,6,120,360,0.5,6,Rat,Cortex,6,7,86%,25,0.37,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,22,20,6,120,360,1,3,Rat,Cortex,3,5,60%,25,0.25,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,22,20,6,120,360,2,3,Rat,Cortex,3,5,60%,25,0.13,
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,2020,a-SiC,Polyimide,6,22,20,6,120,360,2,4,Rat,Cortex,4,6,67%,100,0.13,
+"Ghazavi, A 2020",10.1016/j.bios.2020.112608,2020,2020,a-SiC,Polyimide,6,13,23,7,161,657,0.535,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,,,,10,,1.3
+"Ghazavi, A 2020",10.1016/j.bios.2020.112608,2020,2020,a-SiC,Polyimide,6,13,23,7,161,657,0.515,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,,,,10,,3
+"Ghazavi, A 2020",10.1016/j.bios.2020.112608,2020,2020,a-SiC,Polyimide,6,13,23,7,161,657,0.495,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,,,,10,,4.5
+"Ghazavi, A 2020",10.1016/j.bios.2020.112608,2020,2020,a-SiC,Polyimide,6,13,23,7,161,657,0.475,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,,,,10,,6.2
+"Ghazavi, A 2020",10.1016/j.bios.2020.112608,2020,2020,a-SiC,Polyimide,6,13,23,7,161,657,0.455,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,,,,10,,8.3
+"Ghazavi, A 2020",10.1016/j.bios.2020.112608,2020,2020,a-SiC,Polyimide,6,13,23,7,161,657,0.536,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,3,,,10,,1.39
+"Ghazavi, A 2020",10.1016/j.bios.2020.112608,2020,2020,a-SiC,Polyimide,8,13,23,9,207,1397,0.536,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,,,,10,,3.34
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,20,10,200,1666,1.3,4,Rat,Cortex,9,9,100%,10,0.44,1.21
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,20,10,200,1666,1.5,4,Rat,Cortex,6,6,100%,10,0.33,0.96
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,20,10,200,1666,1.7,4,Rat,Cortex,9,9,100%,10,0.2,0.81
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,20,10,200,1666,1.3,4,Pig,Cortex,5,7,71%,10,0.91,1.22
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,20,10,200,1666,1.5,4,Pig,Cortex,3,5,60%,10,0.69,0.97
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,20,10,200,1666,1.7,4,Pig,Cortex,0,4,0%,10,,0.81
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,20,10,200,1666,1.5,1,Macaque,Cortex,1,2,50%,10,1.02,0.97
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,20,10,200,1666,1.7,1,Macaque,Cortex,5,6,83%,10,0.57,0.8
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,30,10,300,2500,1.3,4,Rat,Cortex,9,9,100%,10,0.55,2.24
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,30,10,300,2500,1.5,4,Rat,Cortex,14,14,100%,10,0.36,1.7
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,30,10,300,2500,1.7,4,Rat,Cortex,12,12,100%,10,0.3,1.38
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,30,10,300,2500,1.3,4,Pig,Cortex,9,10,90%,10,1.52,2.26
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,30,10,300,2500,1.5,4,Pig,Cortex,11,14,79%,10,1.15,1.72
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,30,10,300,2500,1.7,4,Pig,Cortex,3,9,33%,10,1.15,1.38
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,30,10,300,2500,1.5,1,Macaque,Cortex,3,3,100%,10,0.85,1.7
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,30,10,300,2500,1.7,1,Macaque,Cortex,6,6,100%,10,0.55,1.4
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,20,10,200,1666,1.3,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,7,,,10,,1.2
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,20,10,200,1666,1.5,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,3,,,10,,0.96
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,20,10,200,1666,1.7,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,3,,,10,,0.8
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,30,10,300,2500,1.3,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,6,,,10,,2.2
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,30,10,300,2500,1.5,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,3,,,10,,1.7
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,2020,a-SiC,Polyimide,10,11,30,10,300,2500,1.7,<NA>,Silicone Coated Silicon,Silicone Coated Silicon,6,,,10,,1.4
