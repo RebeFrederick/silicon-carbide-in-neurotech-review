@@ -1,0 +1,12 @@
+refID,doi,year,Subjects_Count,Species,Tissue,Device_Category,Implant_Duration_days,Primary_Antibodies,Secondary_Antibodies,General_Stain,Imaging_Method,Distance_from_Implant_Min_um,Distance_from_Implant_Max_um
+"Abbott, J 2024",10.1016/j.biomaterials.2024.122543,2024,7,Rat,Brain,Intra-cortical,112,"GFAP, NeuN","Alexa Fluor 647 (goat anti chicken IgY), Alexa Fluor 555 (goat anti rabbit IgG)",None,Confocal,50,500
+"Cogan, S 2003",10.1002/jbm.a.10152,2003,1,Rabbit,Skin,Material Sample,90,None,None,Hematoxylin & Eosin,Light Microscopy,,
+"Cogan, S 2003",10.1002/jbm.a.10152,2003,2,Rabbit,Brain,Intra-cortical,120,None,None,Cresyl Violet,Light Microscopy,20,240
+"Dobariya, A 2022",10.1038/s41598-022-19688-2,2022,2,Pig,Brain,Intra-cortical,1,None,None,"Nissl, Luxol Fast Blue, Periodic Acid Schiff",Light Microscopy,,
+"Frewin, C 2013",10.1109/NER.2013.6696021,2013,3,Mouse,Brain,Material Sample,35,"CD45-conjugated FITC, GFAP, MAP2","Alexa Fluor 568, Alexa Fluro 350",None,Confocal,,
+"Ghazavi, A 2020",10.1016/j.bios.2020.112608,2020,2,Rat,Nerve,Intraneural,1,None,None,"Uranyl Acetate, Silver Citrate",TEM,,
+"Haghighi, P 2025",10.3390/mi16020113,2025,7,Rat,Brain,Intra-cortical,112,"GFAP, NeuN","Alexa Fluor 555, Alexa Fluor 647",None,Confocal,50,500
+"Jeakle, E 2023",10.3390/mi14030680,2023,1,Rat,Brain,Intra-cortical,112,"GFAP, NeuN","Alexa Fluor 555, Alexa Fluor 647",None,Confocal,,
+"Joshi-Imre, A 2019",10.1088/1741-2552/ab1bc8,2019,8,Rat,Brain,Intra-cortical,210,"CD68, GFAP, NeuN",Not Reported,None,"Confocal, SEM",,
+"Knaack, G 2016",10.3389/fnins.2016.00301,2016,8,Rat,Brain,Intra-cortical,56,"CD68, DAPI, GFAP, NeuN","Alexa Fluor 647 (goat anti-chicken), Alexa Fluor 546 (goat anti-mouse), Alexa Fluor 488 (goat anti-rabbit)",None,Confocal,30,100
+"Vomero, M 2017b",10.1002/adbi.201700081,2017,3,Rat,Brain,ECoG,42,"CD68, DAPI, GFAP, NeuN","Alexa Fluor 488 (antimouse), Alexa Fluor 488 (antirabbit), Alexa Fluor 633 (antimouse)",None,"Confocal, SEM",0,600

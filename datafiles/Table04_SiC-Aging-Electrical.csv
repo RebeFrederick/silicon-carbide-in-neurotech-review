@@ -1,0 +1,6 @@
+refID,doi,year,SiC_type,Electrode_Type,Pre-Treatment_Electrolyte,Pre-Treatment_Duration,Pre-Treatment_Temperature,Outcome_Metric,Aging_Electrolyte,Aging_Parameters
+"Nguyen, T 2022b",10.1073/pnas.2203287119,2022,3C?SiC [90nm] ,3C?SiC,None,None,None,Impedance,1x PBS ,"1 million pulses (1mA, 1ms, 10 Hz to 100 kHz)"
+"Vomero, M 2017a",10.1109/NER.2017.8008347,2017,a-SiC,glassy carbon,"0.01M PBS,  30mM H2O2",7 days,39°C,"CV, EIS, Porosity (SEM)","0.01M PBS,  30mM H2O2","2500 CV Cycles (100mV/s, ?0.9 to +1.1 V vs Ag/AgCl, 750 cycle steps)"
+"Vomero, M 2017a",10.1109/NER.2017.8008347,2017,a-SiC,glassy carbon,None,None,None,EIS,0.9% NaCl,"15 million pulses (15x 1 million pulses, 500µA, 200µs, 1kHz, 0.2mC/cm^2, biphasic)"
+"Vomero, M 2017b",10.1002/adbi.201700081,2017,a-SiC,glassy carbon,"Dry,  0.01M PBS,  30mM H2O2,  150mM H2O2",7 days,39°C,"CV, EIS, Porosity (SEM)","Dry,  0.01M PBS,  30mM H2O2,  150mM H2O2","2500 CV Cycles (100mV/s, ?0.9 to +1.1 V vs Ag/AgCl)"
+"Vomero, M 2017b",10.1002/adbi.201700081,2017,a-SiC,glassy carbon,None,None,None,EIS,0.9% NaCl,"20 million pulses (4x 5 million pulses, 500µA, 200µs, 1kHz, 0.2mC/cm^2, biphasic)"

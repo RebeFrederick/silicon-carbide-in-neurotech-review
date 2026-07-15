@@ -1,0 +1,18 @@
+refID,doi,year,Material-or-SiC_type,Cells_Species,Cells_Type,CellCulture_Duration_days,Treatment,Assay,Standard_used,Main_Results
+"Bonaventura, G 2019",10.1038/s41598-019-48041-3,2019,3C-SiC,Human,Neuronal Stem Cells,2,None,"Morphology, Viability, Mitochondrial Membrane Potential",,No change
+"Bonaventura, G 2019",10.1038/s41598-019-48041-3,2019,3C-SiC,Mouse,Olfactory Ensheathing,2,None,"Morphology, Viability, Mitochondrial Membrane Potential",,No change
+"Coletti, C 2007",10.1109/IEMBS.2007.4353678,2007,"3C-SiC, 4H-SiC",Human,Keratinocytes (HaCaT),3,None vs. Piranha,MTT,NotReported,Untreated samples had significantly lower contact angle and higher cell proliferation than piranha treated samples
+"Coletti, C 2007",10.1109/IEMBS.2007.4353678,2007,6H-SiC,Human,Keratinocytes (HaCaT),3,None,MTT,NotReported,"Higher cell proliferation compared to Silicon, similar proliferation among different types of SiC."
+"Coletti, C 2007",10.1109/IEMBS.2007.4353678,2007,"3C-SiC, 4H-SiC, 6H-SiC",Mouse,Melanoma (B16-F10),3,None,MTT,NotReported,"Higher cell proliferation compared to Silicon, similar proliferation among different types of SiC."
+"Coletti, C 2007",10.1109/IEMBS.2007.4353678,2007,"3C-SiC, 4H-SiC, 6H-SiC",Human,Fibroblasts (BJ),3,None,MTT,NotReported,"Higher cell proliferation compared to Silicon, similar proliferation among different types of SiC."
+"Frewin, C 2009",10.1002/jmr.966,2009,3C-SiC,Human,Neuroglioma (H4),4,None,MTT,,"High viability, comparable to positive control"
+"Frewin, C 2009",10.1002/jmr.966,2009,3C-SiC,Rat,Pheochromocytoma (PC12),4,None,MTT,,Strong attachment
+"Geramifard, N 2022b",10.3390/mi13101692,2022,a-SiC,Human,Sensory Neuron,28,None vs. 50uM tetrodotoxin (TTX) vs. 25uM potassium chloride (KCl),Immunocytochemistry,"Extracellular Action Potentials, Cell viability",No cell death
+"Nguyen, T 2022a",10.1021/acsnano.2c03188,2022,3C-SiC,Human,Epithelial (MDA-MB-231),5,"None vs. Thermal Ablation ((a) 0.15W, 30degC; (b) 0.22W; (c) 3.5W, 75degC)",Cell Proliferation,,"No Treatment: Complete ablation from electrode area after less than 10sec;  0.15W: Same cell proliferation as growth control;  0.22W: Cells retained adhesion; 3.5W: Gradual ablation, remaining viable cluster after 1 min"
+"Nguyen, T 2022b",10.1073/pnas.2203287119,2022,3C-SiC,Human,Mammary Fibroblast,5,None,"Cell Proliferation, Morphology",,Comparable proliferation and morphology
+"Saddow, S 2014a",10.1149/06107.0101ecst,2014,"3C-SiC, a-SiC, a-SiC/SiO2, a-SiC/3C-SiC, a-SiC/SiO2/3C-SiC",Mouse,Fibroblast (L929),,None,Cytotoxicity,ISO 10993-5,Comparable proliferation
+"Saddow, S 2014b",10.1109/NMDC.2014.6997419,2014,Silicon,Mouse,Fibroblast (L929),4,None,Cell Proliferation,"ISO 10993-5, ISO 10993-12",Barely above hemocompatibility metric of 70% viable cells vs. baseline. Unacceptable degree of platelet binding and activation.
+"Saddow, S 2014b",10.1109/NMDC.2014.6997419,2014,SiO2,Mouse,Fibroblast (L929),4,None,Cell Proliferation,"ISO 10993-5, ISO 10993-12",Fails hemocompatibility. Unacceptable degree of platelet binding and activation.
+"Saddow, S 2014b",10.1109/NMDC.2014.6997419,2014,3C-SiC,Mouse,Fibroblast (L929),4,None,Cell Proliferation,"ISO 10993-5, ISO 10993-12","High hemocompatibility. Little platelet binding, no platelet activation."
+"Saddow, S 2014b",10.1109/NMDC.2014.6997419,2014,a-SiC,Mouse,Fibroblast (L929),4,None,Cell Proliferation,"ISO 10993-5, ISO 10993-12","High hemocompatibility. Some patelet attachment, some activation."
+"Vomero, M 2017b",10.1002/adbi.201700081,2017,a-SiC,Rat,Fibroblast,12,None,"Triple Stain (FDA, Hoechst-33342, PI)",,"High viability, negligible difference vs control"
