@@ -4,7 +4,7 @@ File: SiC_analysis_main.py
 Created: 2024-DEC-10
 @author: Rebecca Frederick
 Deku Lab Silicon Carbide Review Data Analysis
-Last Updated: 2026-FEB-26 by Rebecca A. Frederick
+Last Updated: 2026-JUL-08 by Rebecca A. Frederick
 
 
 """
@@ -69,11 +69,11 @@ from SiC_functions_analysis import ArticleList_Analysis06
 from SiC_functions_plots import ArticleList_Plot01
 from SiC_functions_plots import ArticleList_Plot02
 from SiC_functions_plots import ArticleList_Plot02b
-from SiC_functions_plots import ArticleList_Plot03mosaic
+#from SiC_functions_plots import ArticleList_Plot03mosaic
 from SiC_functions_plots import ArticleList_Plot03heatA
 from SiC_functions_plots import ArticleList_Plot03heatB
 from SiC_functions_plots import ArticleList_Plot03heatC
-from SiC_functions_plots import ArticleList_Plot03ice
+#from SiC_functions_plots import ArticleList_Plot03ice
 #
 from SiC_functions_plots import Neural_Plot00T
 from SiC_functions_plots import Neural_Plot00
@@ -81,6 +81,9 @@ from SiC_functions_plots import Neural_Plot01a
 from SiC_functions_plots import Neural_Plot01b
 from SiC_functions_plots import Neural_Plot02
 from SiC_functions_plots import Neural_Plot03
+from SiC_functions_plots import Neural_Plot04a
+from SiC_functions_plots import Neural_Plot04b
+from SiC_functions_plots import Neural_Plot05
 
 
 #-----------------------------------------------------------------------------
@@ -88,36 +91,34 @@ from SiC_functions_plots import Neural_Plot03
 #                   Define all datafile names/locations
 #-----------------------------------------------------------------------------
 # # Define data file names:
-    # !!!  uncomment as data sheet is completed
 TopFolderName = os.getcwd()
 FolderName = TopFolderName + '\\datafiles\\'
 SaveLocation = TopFolderName + '\\outputs\\'
 SaveFolderHTML = TopFolderName + '\\webpage\\assets\\'
 #
 ArticleList_FileName = '0_SiC-Review_Included-List_Articles.csv'
-#ArticleList_FileName = '0_SiC-Review_Included-Articles_Master-List.csv'
 ReviewsList_FileName = '0_SiC-Review_Included-List_Reviews.csv'
-#ReviewsList_FileName = '0_SiC-Review_Included-Articles_Reviews-List.csv'
 Neural_InVivo_FileName01 = 'neural_list_invivo_data01.csv'
 Neural_InVivo_FileName02 = 'neural_list_invivo_data02.csv'
 Neural_ExVivo_FileName = 'neural_list_exvivo_data.csv'
 Neural_InVitro_FileName = 'neural_list_invitro_data.csv'
-#Neural_Benchtop_FileName = 'neural_list_benchtop_data.csv'
-#Neural_MatProp_FileName = 'neural_list_matproperties_data.csv'
-#Neural_Fab_FileName = 'neural_list_fabrication_data.csv'
+Neural_Benchtop_FileName01 = 'neural_list_benchtopmatproperties_data01.csv'
+Neural_Benchtop_FileName02 = 'neural_list_benchtopmatproperties_data02.csv'
+Neural_Fab_FileName = 'neural_list_fabrication_data.csv'
+Neural_Devices_FileName = 'neural_list_device-info_data.csv'
 #
 #-----------------------------------------------------------------------------
 # Define data file locations:
-    # !!!  uncomment as data sheet is completed
 ArticleList_Location = FolderName + ArticleList_FileName
 ReviewsList_Location = FolderName + ReviewsList_FileName
 Neural_InVivo_Location01 = FolderName + Neural_InVivo_FileName01
 Neural_InVivo_Location02 = FolderName + Neural_InVivo_FileName02
 Neural_ExVivo_Location = FolderName + Neural_ExVivo_FileName 
 Neural_InVitro_Location = FolderName + Neural_InVitro_FileName
-#Neural_Benchtop_Location = FolderName + Neural_Benchtop_FileName
-#Neural_MatProp_Location = FolderName + Neural_MatProp_FileName
-#Neural_Fab_Location = FolderName + Neural_Fab_FileName
+Neural_Benchtop_Location01 = FolderName + Neural_Benchtop_FileName01
+Neural_Benchtop_Location02 = FolderName + Neural_Benchtop_FileName02
+Neural_Fab_Location = FolderName + Neural_Fab_FileName
+Neural_Devices_Location = FolderName + Neural_Devices_FileName
 
 
 #-----------------------------------------------------------------------------
@@ -126,29 +127,30 @@ Neural_InVitro_Location = FolderName + Neural_InVitro_FileName
 #-----------------------------------------------------------------------------
 #
 # Read Raw Data CSV Files Into New DataFrames:
-    # !!!  uncomment as data sheet is completed
 ArticleList_DF = pd.read_csv(ArticleList_Location)
 ReviewsList_DF = pd.read_csv(ReviewsList_Location)
 Neural_InVivo_DF01 = pd.read_csv(Neural_InVivo_Location01)
 Neural_InVivo_DF02 = pd.read_csv(Neural_InVivo_Location02)
 Neural_ExVivo_DF = pd.read_csv(Neural_ExVivo_Location)
 Neural_InVitro_DF = pd.read_csv(Neural_InVitro_Location)
-#Neural_Benchtop_DF = pd.read_csv(Neural_Benchtop_Location)
-#Neural_MatProp_DF = pd.read_csv(Neural_MatProp_Location)
-#Neural_Fab_DF = pd.read_csv(Neural_Fab_Location)
+Neural_Benchtop_DF01 = pd.read_csv(Neural_Benchtop_Location01)
+Neural_Benchtop_DF02 = pd.read_csv(Neural_Benchtop_Location02)
+Neural_Fab_DF = pd.read_csv(Neural_Fab_Location)
+Neural_Devices_DF = pd.read_csv(Neural_Devices_Location)
 
 #-----------------------------------------------------------------------------
-# Force pubmed_id to text from number
-    # !!!  uncomment as data sheet is completed
-ArticleList_DF['pubmed_id'] = ArticleList_DF['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
-ReviewsList_DF['pubmed_id'] = ReviewsList_DF['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
-Neural_InVivo_DF01['pubmed_id'] = Neural_InVivo_DF01['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
-Neural_InVivo_DF02['pubmed_id'] = Neural_InVivo_DF02['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
+# (~ depreciated, pubmed_id removed 2026-06-24 ~)
+# Force pubmed_id to text from number 
+#ArticleList_DF['pubmed_id'] = ArticleList_DF['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
+#ReviewsList_DF['pubmed_id'] = ReviewsList_DF['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
+#Neural_InVivo_DF01['pubmed_id'] = Neural_InVivo_DF01['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
+#Neural_InVivo_DF02['pubmed_id'] = Neural_InVivo_DF02['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
 #Neural_ExVivo_DF['pubmed_id'] = Neural_ExVivo_DF['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
 #Neural_InVitro_DF['pubmed_id'] = Neural_InVitro_DF['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
-#Neural_Benchtop_DF['pubmed_id'] = Neural_Benchtop_DF['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
-#Neural_MatProp_DF['pubmed_id'] = Neural_MatProp_DF['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
+#Neural_Benchtop_DF01['pubmed_id'] = Neural_Benchtop_DF01['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
+#Neural_Benchtop_DF02['pubmed_id'] = Neural_Benchtop_DF02['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
 #Neural_Fab_DF['pubmed_id'] = Neural_Fab_DF['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
+#Neural_Devices_DF['pubmed_id'] = Neural_Devices_DF['pubmed_id'].astype(pd.Int64Dtype()).astype(str)
 
 
 
@@ -176,11 +178,11 @@ ReviewsList_DF['pub_decade'] = ReviewsList_DF['year'] // 10 * 10    # creates ne
 # *** File Output ***
 # Export summary table for manuscript
 #-----------------------------------------------------------------------------
-ReviewsList_DF_Selected = ReviewsList_DF[['refID','title','Review_MainTopics','NeuralEngReview_SubTopics']]
+ReviewsList_DF_Selected = ReviewsList_DF[['refID','title','SiC_Type','Category']]
 ReviewsList_DF_Selected = ReviewsList_DF_Selected.rename(columns={'refID':'ReferenceID',
                                                                   'title':'Title',
-                                                                  'Review_MainTopics':'Main Topics',
-                                                                  'NeuralEngReview_SubTopics':'Subtopics'})
+                                                                  'SiC_Type':'SiC Type',
+                                                                  'Category':'Publication Category'})
 ReviewsList_DF_Selected.to_csv(FolderName+'/PyOutputs/table_review-articles.csv')
 
 
@@ -197,7 +199,7 @@ ArticleList_DTypes_atLoad = ArticleList_DF.dtypes    # pull initial list of data
 # Add publication decade data column to ArticleList_DF
 ArticleList_DF['pub_decade'] = ArticleList_DF['year'] // 10 * 10    # creates new year values by decades
 #
-# !!! add decade_end column ?
+
 #-----------------------------------------------------------------------------
 # Define the range of SiC Type columns to check
 start_col_SiC = 'amorphousSiC'
@@ -216,20 +218,20 @@ ArticleList_DF['Reported_SiC'] = ArticleList_DF['Reported_SiC'].apply(lambda x: 
 ArticleList_DF['Reported_SiC'] = ArticleList_DF['Reported_SiC'].apply(lambda x: [item.replace('crystalline_6H-SiC', '6H-SiC') for item in x])
 #-----------------------------------------------------------------------------
 # Define the range of Study Category columns to check
-start_col_cat = 'NeuralEng'
-end_col_cat = 'GeneralImplants_OtherTech'
+start_col_cat = 'NeuralInterface'
+end_col_cat = 'GeneralImplants_Other'
 # Get the list of column names within the specified range
 cols_in_cat_range = ArticleList_DF.loc[:, start_col_cat:end_col_cat].columns.tolist()
 # Apply a function to each row to get the true column names in the specified range
 ArticleList_DF['Reported_Category'] = ArticleList_DF.apply(
     lambda row: [col for col in cols_in_cat_range if row[col]], axis=1)
 # Replace column names with shorter labels
-ArticleList_DF['Reported_Category'] = ArticleList_DF['Reported_Category'].apply(lambda x: [item.replace('NeuralEng', 'Neural') for item in x])
+ArticleList_DF['Reported_Category'] = ArticleList_DF['Reported_Category'].apply(lambda x: [item.replace('NeuralInterface', 'Neural') for item in x])
 ArticleList_DF['Reported_Category'] = ArticleList_DF['Reported_Category'].apply(lambda x: [item.replace('Biosensor', 'Biosensors') for item in x])
 ArticleList_DF['Reported_Category'] = ArticleList_DF['Reported_Category'].apply(lambda x: [item.replace('Orthopedic_Dental', 'Ortho/Dental') for item in x])
 ArticleList_DF['Reported_Category'] = ArticleList_DF['Reported_Category'].apply(lambda x: [item.replace('Cardiovascular', 'Cardio') for item in x])
 ArticleList_DF['Reported_Category'] = ArticleList_DF['Reported_Category'].apply(lambda x: [item.replace('DrugRelease', 'Drug Release') for item in x])
-ArticleList_DF['Reported_Category'] = ArticleList_DF['Reported_Category'].apply(lambda x: [item.replace('GeneralImplants_OtherTech', 'OtherTech') for item in x])
+ArticleList_DF['Reported_Category'] = ArticleList_DF['Reported_Category'].apply(lambda x: [item.replace('GeneralImplants_Other', 'OtherTech') for item in x])
 #-----------------------------------------------------------------------------
 # Define the range of Data Type columns to check
 start_col_dtype = 'InVivo_animal'
@@ -256,21 +258,21 @@ ArticleList_DataTypes = ArticleList_DF.dtypes    # pull new list of data types
 # Create and Export Neural Engineering Only Lists from ArticleList Dataframe:
 #-----------------------------------------------------------------------------
 # Pull list of only Neural Engineering articles from ArtilceList dataframe:
-NeuralEngList_DF = ArticleList_DF[ArticleList_DF['NeuralEng'] == True]
-NeuralEngList_DF = NeuralEngList_DF.drop(['SiC_label_count','SiC_Type',
+NeuralList_DF = ArticleList_DF[ArticleList_DF['NeuralInterface'] == True]
+NeuralList_DF = NeuralList_DF.drop(['SiC_label_count','SiC_Type',
                                           'Category_label_count',
-                                          'Category','NeuralEng',
+                                          'Category','NeuralInterface',
                                           'Data_label_count','Data_Reported',
                                           'Biosensor','Cardiovascular',
                                           'Orthopedic_Dental','DrugRelease',                                          
-                                          'GeneralImplants_OtherTech'],
+                                          'GeneralImplants_Other'],
                                           axis='columns')
-NeuralEngList_Columns = NeuralEngList_DF.columns
-NeuralEngList_DataTypes = NeuralEngList_DF.dtypes
+NeuralList_Columns = NeuralList_DF.columns
+NeuralList_DataTypes = NeuralList_DF.dtypes
 #-----------------------------------------------------------------------------
 # Create lists of differnt reported data types within Neural Eng papers:
 #   In Vivo Data - Animals:
-in_vivo_a_list = NeuralEngList_DF[NeuralEngList_DF['InVivo_animal'] == True]    
+in_vivo_a_list = NeuralList_DF[NeuralList_DF['InVivo_animal'] == True]    
 in_vivo_a_list = in_vivo_a_list.drop(['InVivo_animal','InVivo_human',
                                       'MaterialProperties',
                                       'FabricationMethods','Benchtop',
@@ -281,7 +283,7 @@ in_vivo_a_list = in_vivo_a_list.drop(['InVivo_animal','InVivo_human',
                                       'crystalline_4H-SiC',
                                       'crystalline_6H-SiC'],axis=1)
 #   In Vivo Data - Humans:
-in_vivo_h_list = NeuralEngList_DF[NeuralEngList_DF['InVivo_human'] == True]
+in_vivo_h_list = NeuralList_DF[NeuralList_DF['InVivo_human'] == True]
 in_vivo_h_list = in_vivo_h_list.drop(['InVivo_animal','InVivo_human',
                                       'MaterialProperties',
                                       'FabricationMethods','Benchtop',
@@ -292,7 +294,7 @@ in_vivo_h_list = in_vivo_h_list.drop(['InVivo_animal','InVivo_human',
                                       'crystalline_4H-SiC',
                                       'crystalline_6H-SiC'],axis=1)
 #   Material Properties:
-mat_properties_list = NeuralEngList_DF[NeuralEngList_DF['MaterialProperties'] == True]
+mat_properties_list = NeuralList_DF[NeuralList_DF['MaterialProperties'] == True]
 mat_properties_list = mat_properties_list.drop(['InVivo_animal','InVivo_human',
                                       'MaterialProperties',
                                       'FabricationMethods','Benchtop',
@@ -303,7 +305,7 @@ mat_properties_list = mat_properties_list.drop(['InVivo_animal','InVivo_human',
                                       'crystalline_4H-SiC',
                                       'crystalline_6H-SiC'],axis=1)
 #   Fabrication Methods:
-fab_list = NeuralEngList_DF[NeuralEngList_DF['FabricationMethods'] == True]
+fab_list = NeuralList_DF[NeuralList_DF['FabricationMethods'] == True]
 fab_list = fab_list.drop(['InVivo_animal','InVivo_human',
                                       'MaterialProperties',
                                       'FabricationMethods','Benchtop',
@@ -314,7 +316,7 @@ fab_list = fab_list.drop(['InVivo_animal','InVivo_human',
                                       'crystalline_4H-SiC',
                                       'crystalline_6H-SiC'],axis=1)
 #   Benchtop:
-benchtop_list = NeuralEngList_DF[NeuralEngList_DF['Benchtop'] == True]
+benchtop_list = NeuralList_DF[NeuralList_DF['Benchtop'] == True]
 benchtop_list = benchtop_list.drop(['InVivo_animal','InVivo_human',
                                       'MaterialProperties',
                                       'FabricationMethods','Benchtop',
@@ -325,7 +327,7 @@ benchtop_list = benchtop_list.drop(['InVivo_animal','InVivo_human',
                                       'crystalline_4H-SiC',
                                       'crystalline_6H-SiC'],axis=1)
 #   Ex Vivo Data:
-ex_vivo_list = NeuralEngList_DF[NeuralEngList_DF['ExVivo'] == True]
+ex_vivo_list = NeuralList_DF[NeuralList_DF['ExVivo'] == True]
 ex_vivo_list = ex_vivo_list.drop(['InVivo_animal','InVivo_human',
                                       'MaterialProperties',
                                       'FabricationMethods','Benchtop',
@@ -336,7 +338,7 @@ ex_vivo_list = ex_vivo_list.drop(['InVivo_animal','InVivo_human',
                                       'crystalline_4H-SiC',
                                       'crystalline_6H-SiC'],axis=1)
 #   In Vitro Data:
-in_vitro_list = NeuralEngList_DF[NeuralEngList_DF['CellCulture_InVitro'] == True]
+in_vitro_list = NeuralList_DF[NeuralList_DF['CellCulture_InVitro'] == True]
 in_vitro_list = in_vitro_list.drop(['InVivo_animal','InVivo_human',
                                       'MaterialProperties',
                                       'FabricationMethods','Benchtop',
@@ -351,7 +353,7 @@ in_vitro_list = in_vitro_list.drop(['InVivo_animal','InVivo_human',
 # *** File Output ***
 # Export Neural Engineering Article Lists from ArticleList Dataframe
 #-----------------------------------------------------------------------------
-NeuralEngList_DF.to_csv(FolderName+'/PyOutputs/neural_all-articles.csv')
+NeuralList_DF.to_csv(FolderName+'/PyOutputs/neural_all-articles.csv')
 in_vivo_h_list.to_csv(FolderName+'/PyOutputs/neural_list_human.csv')
 in_vivo_a_list.to_csv(FolderName+'/PyOutputs/neural_list_animal.csv')
 ex_vivo_list.to_csv(FolderName+'/PyOutputs/neural_list_exvivo.csv')
@@ -392,9 +394,9 @@ Neural_InVivo_DF01['Device_Category'] = Neural_InVivo_DF01['Device_Category'].as
 #Neural_InVivo_DF01['Devices_total'] = Number, Integer
 #Neural_InVivo_DF01['Devices_per_subject_average'] = Number, Integer
 Neural_InVivo_DF01['Devices_per_subject_inferred'] = Neural_InVivo_DF01['Devices_per_subject_inferred'].astype('category')
-#Neural_InVivo_DF01['Implant_duration_days'] = Number, Integer
-#Neural_InVivo_DF01['Implant_duration_weeks'] = Number
-#Neural_InVivo_DF01['Implant_duration_months'] = Number
+#Neural_InVivo_DF01['Implant_Duration_days'] = Number, Integer
+#Neural_InVivo_DF01['Implant_Duration_weeks'] = Number
+#Neural_InVivo_DF01['Implant_Duration_months'] = Number
 #-----------------------------------------------------------------------------
 # *** File Output ***
 # Export summary table for manuscript
@@ -406,9 +408,9 @@ Neural_InVivo_DF01_Selected = Neural_InVivo_DF01[['SubjectCount',
                                                   'Device_Category','Devices_per_subject',
                                                   'Devices_total',
                                                   'Devices_per_subject_average',
-                                                  'Implant_duration_days',
-                                                  'Implant_duration_weeks',
-                                                  'Implant_duration_months']].reset_index()
+                                                  'Implant_Duration_days',
+                                                  'Implant_Duration_weeks',
+                                                  'Implant_Duration_months']].reset_index()
 Neural_InVivo_DF01_Selected = Neural_InVivo_DF01_Selected.rename(columns={'refID':'ReferenceID'})
 Neural_InVivo_DF01_Selected.to_csv(FolderName+'/PyOutputs/table_neural-in-vivo.csv')
 
@@ -437,7 +439,7 @@ Neural_InVivo_DF01_Selected.to_csv(FolderName+'/PyOutputs/table_neural-in-vivo.c
 # Setup plot template:
 template1 = go.layout.Template()
 # Set font and colors
-template1.layout.font = dict(size=16,color='black')
+template1.layout.font = dict(size=20,color='black')
 template1.layout.plot_bgcolor = 'white'
 # Set axis line properties
 template1.layout.xaxis = dict(gridcolor='lightgray',gridwidth=1,
@@ -447,7 +449,7 @@ template1.layout.yaxis = dict(gridcolor='lightgray',gridwidth=1,
 # Set figure margins
 template1.layout.margin =  dict(l=60,r=40,t=60,b=60)
 # Set legend properties
-template1.layout.legend.font = dict(size=14)
+template1.layout.legend.font = dict(size=16)
 #template1.layout.legend.bgcolor = 'rgba(0,0,0,0)' # = transparent
 
 # Set template as default
@@ -525,8 +527,8 @@ decade_unique_count.set_index('pub_decade', inplace=True)
 #-----------------------------------------------------------------------------
 # Run ReviewsList_Analysis functions:
 #-----------------------------------------------------------------------------
-# !!! pending creation/assignment of category controlled vocabulary
-
+# pending creation/assignment of category controlled vocabulary
+# - abandoned 2026-06-26
 
 #-----------------------------------------------------------------------------
 #                               SECTION 8B
@@ -542,7 +544,7 @@ Cat_by_Yr_melted = ArticleList_Analysis01(ArticleList_DF,decade_unique_count)
 # Create cat_by_decade_totals
 cat_by_decade_totals = ArticleList_Analysis02(Cat_by_Yr_melted)
 # Output dataframes filtered by device type/category
-    # ['NeuralEng','Biosensor','Cardiovascular','Orthopedic_Dental','DrugRelease','GeneralImplants_OtherTech']
+    # ['NeuralInterface','Biosensor','Cardiovascular','Orthopedic_Dental','DrugRelease','GeneralImplants_Other']
 
 # !!!  in progress
 
@@ -558,25 +560,35 @@ DF3 = ArticleList_Analysis06(ArticleList_DF)
 #-----------------------------------------------------------------------------
 # Run ReviewsList_Plot functions:
 #-----------------------------------------------------------------------------
-# !!! pending creation/assignment of category controlled vocabulary
-
+# pending creation/assignment of category controlled vocabulary
+# -- abandoned 2026-06-26
 
 #-----------------------------------------------------------------------------
 #                               SECTION 9B
 #-----------------------------------------------------------------------------
 # Run ArticleList_Plot functions:
 #-----------------------------------------------------------------------------
-# save html & png version of "fig_article-count-by-year" to Outputs folder
+# [Manuscript Fig] Plots Num. Publications vs. Year Published
 ArticleList_Plot01(SaveLocation,SaveFolderHTML,year_unique_count)
-# save html & png version of "fig_article-category-by-decade" to Outputs folder
-#ArticleList_Plot02(SaveLocation,SaveFolderHTML,c_greys,Cat_by_Yr_melted,cat_by_decade_totals)
+# # [Manuscript Fig] Plots Num. Publications vs. Decade from Year Published
 ArticleList_Plot02b(SaveLocation,SaveFolderHTML,c_greys,ArticleListDF_exploded) # -vB
-#save html & png version of "fig_mosaic-SiC-publications" to Outputs folder
-#ArticleList_Plot03mosaic(SaveLocation,SaveFolderHTML,ArticleListDF_exploded)
+# [Manuscript Fig] Plots heatmap Device Category vs. SiC Type
 ArticleList_Plot03heatA(SaveLocation,SaveFolderHTML,ArticleListDF_exploded)
+# [Manuscript Fig] plots heatmap Device Category vs. Data Type
 ArticleList_Plot03heatB(SaveLocation,SaveFolderHTML,ArticleListDF_exploded)
+# [Manuscript Fig] plots heatmap SiC type vs. Data type
 ArticleList_Plot03heatC(SaveLocation,SaveFolderHTML,ArticleListDF_exploded)
+
+# Un-used Functions:
+# Plots Num. Publications vs. Decade from Year Published
+#ArticleList_Plot02(SaveLocation,SaveFolderHTML,c_greys,Cat_by_Yr_melted,cat_by_decade_totals)
+#ArticleList_Plot02dot(SaveLocation,SaveFolderHTML,c_greys,ArticleListDF_exploded)
+#ArticleList_Plot03mosaic(SaveLocation,SaveFolderHTML,ArticleListDF_exploded)
 #ArticleList_Plot03ice(SaveLocation,SaveFolderHTML,ArticleListDF_exploded)
+#ArticleList_Plot03sun(SaveLocation,SaveFolderHTML,ArticleListDF_exploded)
+#ArticleList_Plot03mosaic(SaveLocation,SaveFolderHTML,ArticleListDF_exploded)
+#create_plotly_mosaic(df, index, colors):    
+#ArticleList_Plot04(SaveLocation,SaveFolderHTML,DF1,DF2,DF3)
 
 # !!!  in progress
 
@@ -606,13 +618,27 @@ ArticleList_Plot03heatC(SaveLocation,SaveFolderHTML,ArticleListDF_exploded)
 # define bubble size
     # example using data max value: bubblesizeunit = 2.*max(inputDF['SubjectCount'])/(40**2)  
 bubblesizeunit = 0.01
-# run plotting functions
+
+# run plotting functions:
+
+# [Manuscript Fig] Plots all in vivo data subject statistics
 Neural_Plot00T(SaveLocation,SaveFolderHTML,Neural_InVivo_DF01_Selected)
+# [Manuscript Fig] Plots all in vivo data subject statistics
 Neural_Plot00(SaveLocation,SaveFolderHTML,Neural_InVivo_DF01_Selected)
+# Plots implant duration vs. tissue location (each study separately)
 Neural_Plot01a(SaveLocation,SaveFolderHTML,bubblesizeunit,Neural_InVivo_DF01_Selected)
+# [Manuscript Fig] Plots implant duration vs. tissue location
 Neural_Plot01b(SaveLocation,SaveFolderHTML,bubblesizeunit,Neural_InVivo_DF01_Selected)
+# [Manuscript Fig] Plots num. devices per subject vs. implant duration
 Neural_Plot02(SaveLocation,SaveFolderHTML,bubblesizeunit,Neural_InVivo_DF01_Selected)
-#Neural_Plot03(SaveLocation,SaveFolderHTML,bubblesizeunit,Neural_InVivo_DF01_Selected)
+# [Manuscript Fig] Generates Table of In Vivo Histology Data
+Neural_Plot03(SaveLocation,SaveFolderHTML,Neural_InVivo_DF02)
+# [Manuscript Fig] Plots Insertion and Buckling Force Figures
+Neural_Plot04a(SaveLocation,SaveFolderHTML,bubblesizeunit,Neural_Benchtop_DF01)
+Neural_Plot04b(SaveLocation,SaveFolderHTML,bubblesizeunit,Neural_Benchtop_DF01)
+# [Manuscript Fig] Plots SiC Dissolution Rates
+Neural_Plot05(SaveLocation,SaveFolderHTML,Neural_Benchtop_DF02)
+
 
 #-----------------------------------------------------------------------------
 #-----------------------------------------------------------------------------

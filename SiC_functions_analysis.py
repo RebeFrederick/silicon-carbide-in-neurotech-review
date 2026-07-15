@@ -4,7 +4,7 @@ File: SiC_analysis_main.py
 Created: 2025-SEP-16
 @author: Rebecca Frederick
 Deku Lab Silicon Carbide Review Data Analysis
-Last Updated: 2026-FEB-26 by Rebecca A. Frederick
+Last Updated: 2026-JUL-08 by Rebecca A. Frederick
 """
 
 # Include packages required for data analysis functions:
@@ -43,9 +43,9 @@ def ArticleList_Analysis00a(ArticleList_DF):
                                                   'crystalline_4H-SiC',
                                                   'crystalline_6H-SiC',
                                                   'Category_label_count',
-                                                  'Category','NeuralEng','Biosensor',
+                                                  'Category','NeuralInterface','Biosensor',
                                                   'Cardiovascular','Orthopedic_Dental',
-                                                  'DrugRelease','GeneralImplants_OtherTech',
+                                                  'DrugRelease','GeneralImplants_Other',
                                                   'Data_label_count','Data_Reported',
                                                   'InVivo_animal','InVivo_human',
                                                   'MaterialProperties',
@@ -68,8 +68,8 @@ def ArticleList_Analysis00b(ArticleListDF_skinny):
 #-----------------------------------------------------------------------------
 def ArticleList_Analysis01(ArticleList_DF,decade_unique_count):
     #
-    NE_by_Year = ArticleList_DF.groupby(['pub_decade'])['NeuralEng'].agg(
-        NeuralEngineering = 'sum')
+    NE_by_Year = ArticleList_DF.groupby(['pub_decade'])['NeuralInterface'].agg(
+        NeuralInterface = 'sum')
     #    NE_false = lambda x: (~x).sum())
     #    ).reset_index()
     NE_by_Year['decade_end'] = decade_unique_count.decade_end
@@ -103,7 +103,7 @@ def ArticleList_Analysis01(ArticleList_DF,decade_unique_count):
     DrugRel_by_Year['decade_end'] = decade_unique_count.decade_end
     DrugRel_by_Year = DrugRel_by_Year.set_index('decade_end',append=True)
     #
-    GenImp_by_Year = ArticleList_DF.groupby(['pub_decade'])['GeneralImplants_OtherTech'].agg(
+    GenImp_by_Year = ArticleList_DF.groupby(['pub_decade'])['GeneralImplants_Other'].agg(
         OtherImplants = 'sum')
     #    GenImp_false = lambda x: (~x).sum())
     #    ).reset_index()
@@ -113,7 +113,7 @@ def ArticleList_Analysis01(ArticleList_DF,decade_unique_count):
     Categories_by_Year_full = NE_by_Year.join([BioSens_by_Year, Cardio_by_Year, Ortho_by_Year, DrugRel_by_Year, GenImp_by_Year])
     Categories_by_Year = Categories_by_Year_full.reset_index()#.drop(['NE_false','BioSens_false','Cardio_false','Ortho_false','DrugRel_false','GenImp_false'],axis=1)
     Cat_by_Yr_melted = Categories_by_Year.melt(id_vars=['pub_decade','decade_end'],
-                                               value_vars=['NeuralEngineering','Biosensors','Cadiovascular','Orthopedic_or_Dental','DrugRelease','OtherImplants'],
+                                               value_vars=['NeuralInterface','Biosensors','Cadiovascular','Orthopedic_or_Dental','DrugRelease','OtherImplants'],
                                                var_name='Category',
                                                value_name='Number of Articles')
     #    
@@ -128,14 +128,14 @@ def ArticleList_Analysis02(Cat_by_Yr_melted):
 
 #-----------------------------------------------------------------------------
 def ArticleList_Analysis03(ArticleList_DF):
-    Neural_DF = ArticleList_DF.loc[ArticleList_DF["NeuralEng"] == True]
+    Neural_DF = ArticleList_DF.loc[ArticleList_DF["NeuralInterface"] == True]
     Biosensor_DF = ArticleList_DF.loc[ArticleList_DF["Biosensor"] == True]
     Cardio_DF = ArticleList_DF.loc[ArticleList_DF["Cardiovascular"] == True]
     Ortho_DF = ArticleList_DF.loc[ArticleList_DF["Orthopedic_Dental"] == True]
     DrugR_DF = ArticleList_DF.loc[ArticleList_DF["DrugRelease"] == True]
-    Other_DF = ArticleList_DF.loc[ArticleList_DF["GeneralImplants_OtherTech"] == True]
+    Other_DF = ArticleList_DF.loc[ArticleList_DF["GeneralImplants_Other"] == True]
     #
-    ArticleList_Dictionary = {"NeuralEngineering": Neural_DF, "Biosensors": Biosensor_DF, "Cadiovascular": Cardio_DF, "Orthopedic_or_Dental": Ortho_DF, "DrugRelease": DrugR_DF, "OtherImplants": Other_DF}
+    ArticleList_Dictionary = {"NeuralInterfaces": Neural_DF, "Biosensors": Biosensor_DF, "Cadiovascular": Cardio_DF, "Orthopedic_or_Dental": Ortho_DF, "DrugRelease": DrugR_DF, "OtherImplants": Other_DF}
     #
     return ArticleList_Dictionary
 
@@ -233,12 +233,12 @@ def ArticleList_Analysis05(ArticleList_DF):
     index_SiCType = ['a-SiC','3C-SiC','4H-SiC','6H-SiC','Crystalline-Unspecified','Other SiC']
     
     # Pull numbers for DF1 - col 1:
-    count_neng_aSiC = ArticleList_DF[(ArticleList_DF['NeuralEng'] == True) & (ArticleList_DF['amorphousSiC'] == True)].shape[0]
-    count_neng_3C = ArticleList_DF[(ArticleList_DF['NeuralEng'] == True) & (ArticleList_DF['crystalline_3C-SiC'] == True)].shape[0]
-    count_neng_4H = ArticleList_DF[(ArticleList_DF['NeuralEng'] == True) & (ArticleList_DF['crystalline_4H-SiC'] == True)].shape[0]
-    count_neng_6H = ArticleList_DF[(ArticleList_DF['NeuralEng'] == True) & (ArticleList_DF['crystalline_6H-SiC'] == True)].shape[0]
-    count_neng_cryst = ArticleList_DF[(ArticleList_DF['NeuralEng'] == True) & (ArticleList_DF['crystalline_other_unspecified'] == True)].shape[0]
-    count_neng_other = ArticleList_DF[(ArticleList_DF['NeuralEng'] == True) & (ArticleList_DF['otherSiC'] == True)].shape[0]
+    count_neng_aSiC = ArticleList_DF[(ArticleList_DF['NeuralInterface'] == True) & (ArticleList_DF['amorphousSiC'] == True)].shape[0]
+    count_neng_3C = ArticleList_DF[(ArticleList_DF['NeuralInterface'] == True) & (ArticleList_DF['crystalline_3C-SiC'] == True)].shape[0]
+    count_neng_4H = ArticleList_DF[(ArticleList_DF['NeuralInterface'] == True) & (ArticleList_DF['crystalline_4H-SiC'] == True)].shape[0]
+    count_neng_6H = ArticleList_DF[(ArticleList_DF['NeuralInterface'] == True) & (ArticleList_DF['crystalline_6H-SiC'] == True)].shape[0]
+    count_neng_cryst = ArticleList_DF[(ArticleList_DF['NeuralInterface'] == True) & (ArticleList_DF['crystalline_other_unspecified'] == True)].shape[0]
+    count_neng_other = ArticleList_DF[(ArticleList_DF['NeuralInterface'] == True) & (ArticleList_DF['otherSiC'] == True)].shape[0]
     
     # Pull numbers for DF1 - col 2:
     count_biosens_aSiC = ArticleList_DF[(ArticleList_DF['Biosensor'] == True) & (ArticleList_DF['amorphousSiC'] == True)].shape[0]
@@ -273,12 +273,12 @@ def ArticleList_Analysis05(ArticleList_DF):
     count_drug_other = ArticleList_DF[(ArticleList_DF['DrugRelease'] == True) & (ArticleList_DF['otherSiC'] == True)].shape[0]
     
     # Pull numbers for DF1 - col 6:
-    count_genimplant_aSiC = ArticleList_DF[(ArticleList_DF['GeneralImplants_OtherTech'] == True) & (ArticleList_DF['amorphousSiC'] == True)].shape[0]
-    count_genimplant_3C = ArticleList_DF[(ArticleList_DF['GeneralImplants_OtherTech'] == True) & (ArticleList_DF['crystalline_3C-SiC'] == True)].shape[0]
-    count_genimplant_4H = ArticleList_DF[(ArticleList_DF['GeneralImplants_OtherTech'] == True) & (ArticleList_DF['crystalline_4H-SiC'] == True)].shape[0]
-    count_genimplant_6H = ArticleList_DF[(ArticleList_DF['GeneralImplants_OtherTech'] == True) & (ArticleList_DF['crystalline_6H-SiC'] == True)].shape[0]
-    count_genimplant_cryst = ArticleList_DF[(ArticleList_DF['GeneralImplants_OtherTech'] == True) & (ArticleList_DF['crystalline_other_unspecified'] == True)].shape[0]
-    count_genimplant_other = ArticleList_DF[(ArticleList_DF['GeneralImplants_OtherTech'] == True) & (ArticleList_DF['otherSiC'] == True)].shape[0]
+    count_genimplant_aSiC = ArticleList_DF[(ArticleList_DF['GeneralImplants_Other'] == True) & (ArticleList_DF['amorphousSiC'] == True)].shape[0]
+    count_genimplant_3C = ArticleList_DF[(ArticleList_DF['GeneralImplants_Other'] == True) & (ArticleList_DF['crystalline_3C-SiC'] == True)].shape[0]
+    count_genimplant_4H = ArticleList_DF[(ArticleList_DF['GeneralImplants_Other'] == True) & (ArticleList_DF['crystalline_4H-SiC'] == True)].shape[0]
+    count_genimplant_6H = ArticleList_DF[(ArticleList_DF['GeneralImplants_Other'] == True) & (ArticleList_DF['crystalline_6H-SiC'] == True)].shape[0]
+    count_genimplant_cryst = ArticleList_DF[(ArticleList_DF['GeneralImplants_Other'] == True) & (ArticleList_DF['crystalline_other_unspecified'] == True)].shape[0]
+    count_genimplant_other = ArticleList_DF[(ArticleList_DF['GeneralImplants_Other'] == True) & (ArticleList_DF['otherSiC'] == True)].shape[0]
     
     
     # create 3 new dataframes (split DF2 & DF3 to functions Analysis05 & Analysis06):
@@ -311,13 +311,13 @@ def ArticleList_Analysis06(ArticleList_DF):
     #index_StudyCat = ['Neural Engineering','Biosensors','Cadiovascular','Orthopedic & Dental','Drug Release','Other Implants']
     
     # Pull numbers for DF1 - col 1:
-    count_neng_fab = ArticleList_DF[(ArticleList_DF['NeuralEng'] == True) & (ArticleList_DF['FabricationMethods'] == True)].shape[0]
-    count_neng_mat = ArticleList_DF[(ArticleList_DF['NeuralEng'] == True) & (ArticleList_DF['MaterialProperties'] == True)].shape[0]
-    count_neng_bench = ArticleList_DF[(ArticleList_DF['NeuralEng'] == True) & (ArticleList_DF['Benchtop'] == True)].shape[0]
-    count_neng_cell = ArticleList_DF[(ArticleList_DF['NeuralEng'] == True) & (ArticleList_DF['CellCulture_InVitro'] == True)].shape[0]
-    count_neng_exvivo = ArticleList_DF[(ArticleList_DF['NeuralEng'] == True) & (ArticleList_DF['ExVivo'] == True)].shape[0]
-    count_neng_animal = ArticleList_DF[(ArticleList_DF['NeuralEng'] == True) & (ArticleList_DF['InVivo_animal'] == True)].shape[0]
-    count_neng_human = ArticleList_DF[(ArticleList_DF['NeuralEng'] == True) & (ArticleList_DF['InVivo_human'] == True)].shape[0]
+    count_neng_fab = ArticleList_DF[(ArticleList_DF['NeuralInterface'] == True) & (ArticleList_DF['FabricationMethods'] == True)].shape[0]
+    count_neng_mat = ArticleList_DF[(ArticleList_DF['NeuralInterface'] == True) & (ArticleList_DF['MaterialProperties'] == True)].shape[0]
+    count_neng_bench = ArticleList_DF[(ArticleList_DF['NeuralInterface'] == True) & (ArticleList_DF['Benchtop'] == True)].shape[0]
+    count_neng_cell = ArticleList_DF[(ArticleList_DF['NeuralInterface'] == True) & (ArticleList_DF['CellCulture_InVitro'] == True)].shape[0]
+    count_neng_exvivo = ArticleList_DF[(ArticleList_DF['NeuralInterface'] == True) & (ArticleList_DF['ExVivo'] == True)].shape[0]
+    count_neng_animal = ArticleList_DF[(ArticleList_DF['NeuralInterface'] == True) & (ArticleList_DF['InVivo_animal'] == True)].shape[0]
+    count_neng_human = ArticleList_DF[(ArticleList_DF['NeuralInterface'] == True) & (ArticleList_DF['InVivo_human'] == True)].shape[0]
     
     # Pull numbers for DF1 - col 2:
     count_biosens_fab = ArticleList_DF[(ArticleList_DF['Biosensor'] == True) & (ArticleList_DF['FabricationMethods'] == True)].shape[0]
@@ -356,13 +356,13 @@ def ArticleList_Analysis06(ArticleList_DF):
     count_drug_human = ArticleList_DF[(ArticleList_DF['DrugRelease'] == True) & (ArticleList_DF['InVivo_human'] == True)].shape[0]
     
     # Pull numbers for DF1 - col 6:
-    count_genimplant_fab = ArticleList_DF[(ArticleList_DF['GeneralImplants_OtherTech'] == True) & (ArticleList_DF['FabricationMethods'] == True)].shape[0]
-    count_genimplant_mat = ArticleList_DF[(ArticleList_DF['GeneralImplants_OtherTech'] == True) & (ArticleList_DF['MaterialProperties'] == True)].shape[0]
-    count_genimplant_bench = ArticleList_DF[(ArticleList_DF['GeneralImplants_OtherTech'] == True) & (ArticleList_DF['Benchtop'] == True)].shape[0]
-    count_genimplant_cell = ArticleList_DF[(ArticleList_DF['GeneralImplants_OtherTech'] == True) & (ArticleList_DF['CellCulture_InVitro'] == True)].shape[0]
-    count_genimplant_exvivo = ArticleList_DF[(ArticleList_DF['GeneralImplants_OtherTech'] == True) & (ArticleList_DF['ExVivo'] == True)].shape[0]
-    count_genimplant_animal = ArticleList_DF[(ArticleList_DF['GeneralImplants_OtherTech'] == True) & (ArticleList_DF['InVivo_animal'] == True)].shape[0]
-    count_genimplant_human = ArticleList_DF[(ArticleList_DF['GeneralImplants_OtherTech'] == True) & (ArticleList_DF['InVivo_human'] == True)].shape[0]
+    count_genimplant_fab = ArticleList_DF[(ArticleList_DF['GeneralImplants_Other'] == True) & (ArticleList_DF['FabricationMethods'] == True)].shape[0]
+    count_genimplant_mat = ArticleList_DF[(ArticleList_DF['GeneralImplants_Other'] == True) & (ArticleList_DF['MaterialProperties'] == True)].shape[0]
+    count_genimplant_bench = ArticleList_DF[(ArticleList_DF['GeneralImplants_Other'] == True) & (ArticleList_DF['Benchtop'] == True)].shape[0]
+    count_genimplant_cell = ArticleList_DF[(ArticleList_DF['GeneralImplants_Other'] == True) & (ArticleList_DF['CellCulture_InVitro'] == True)].shape[0]
+    count_genimplant_exvivo = ArticleList_DF[(ArticleList_DF['GeneralImplants_Other'] == True) & (ArticleList_DF['ExVivo'] == True)].shape[0]
+    count_genimplant_animal = ArticleList_DF[(ArticleList_DF['GeneralImplants_Other'] == True) & (ArticleList_DF['InVivo_animal'] == True)].shape[0]
+    count_genimplant_human = ArticleList_DF[(ArticleList_DF['GeneralImplants_Other'] == True) & (ArticleList_DF['InVivo_human'] == True)].shape[0]
     
     
     # create 3 new dataframes (split DF2 & DF3 to functions Analysis05 & Analysis06):

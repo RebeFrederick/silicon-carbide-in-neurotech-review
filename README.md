@@ -1,17 +1,19 @@
 # Silicon-Carbide-in-Neurotech-Review
-Data analysis and visualization as part of publication: "State-of-the-Art Review and Meta Analysis of the Use of Silicon Carbide in Implanted Medical Devices" <br/>
+Data analysis and visualization as part of publication: <br/>
+"Review and Analysis of Silicon Carbide Use in Neural Interfaces and Other Implanted Medical Devices" <br/>
 (doi: TBD) <br/>
-Deku Lab 2025 - Rebecca A. Frederick, Ph.D. <br/>
+Deku Lab - Rebecca A. Frederick, Ph.D. <br/>
 READ ME for Data Analysis and Data Visualization Files <br/>
-Updated: 2025-OCT-06 by Rebecca A. Frederick
+Updated: 2026-JUL-15 by Rebecca A. Frederick, Ph.D.
 
 # Data Visualization Webpage
 [https://rebefrederick.github.io/silicon-carbide-in-neurotech-review/](https://rebefrederick.github.io/silicon-carbide-in-neurotech-review/)
 
 # Code Build
-Python data analysis code created using Spyder IDE (v6.0.1) <br/>
-Spyder installed via Anaconda Navigator (v2.6.4) <br/>
-Code developed using Python (v3.12.7) <br/>
+Python data analysis code created using: <br/>
+Spyder IDE (v6.1.4) <br/>
+Anaconda Navigator (v2.7.1) <br/>
+Python (v3.12.7) <br/>
 Python Packages:
 - kaleido (v1.0.0)
 - matplotlib (v3.10.0)
