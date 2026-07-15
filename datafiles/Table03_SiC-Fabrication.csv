@@ -1,57 +1,60 @@
-refID,doi,year,SiC_type,SiC_use,SiC_fab_method,
-"Abbott, J 2024",10.1016/j.biomaterials.2024.122543,2024,a-SiC,Insulating layer,PECVD,
-"Babaroud, N 2020",10.1109/EMBC44109.2020.9175646,2020,a-SiC,Adhesion promoter,PECVD,
-"Bernardin, E 2018",10.3390/mi9080412,2018,a-SiC,Insulating layer,PECVD,
-"Bernardin, E 2018",10.3390/mi9080412,2018,4H-SiC,Conductive layer,Hot-Wall CVD,
-"Beygi, M 2019",10.3390/mi10070430,2019,3C-SiC,Conductive layer,Hot-Wall CVD,
-"Beygi, M 2019",10.3390/mi10070430,2019,a-SiC,Insulating layer,PECVD,
-"Beygi, M 2021a",10.3390/mi12020126,2021,3C-SiC,Test coupon,Hot-Wall CVD,
-"Bonaventura, G 2019",10.1038/s41598-019-48041-3,2019,3C-SiC,Test Coupon,Hot-Wall CVD,
-"Cvancara, P 2019",10.1109/NER.2019.8716920,2019,a-SiC,Adhesion promoter,PECVD,
-"Cvancara, P 2020",10.1088/1741-2552/ab9a9a,2020,a-SiC,Adhesion promoter,PECVD,
-"Deku, F 2018a",10.1088/1741-2552/aa8f8b,2018,a-SiC,Insulating layer,PECVD,
-"Deku, F 2018b",10.3390/mi9100480,2018,a-SiC,Insulating layer,PECVD,
-"Deku, F 2018c",10.1002/jbm.b.34258,2018,a-SiC,Test coupon,PECVD,
-"Diaz-Botia, C 2017a",10.1109/NER.2017.8008319,2017,a-SiC,Insulating layer,?,<<<
-"Diaz-Botia, C 2017b",10.1088/1741-2552/aa7698,2017,n-SiC,Conductive layer,LPCVD,<<<
-"Diaz-Botia, C 2017b",10.1088/1741-2552/aa7698,2017,a-SiC,Insulating layer,PECVD,
-"Feng, C 2021a",10.1007/978-3-030-65261-6_70,2021,a-SiC,Insulating layer,PECVD,
-"Feng, C 2021b",10.3390/mi12070821,2021,a-SiC,Insulating layer,PECVD,
-"Frewin, C 2011",10.1109/IEMBS.2011.6090582,2011,3C-SiC,Implanted sample,CVD,
-"Frewin, C 2013",10.1109/NER.2013.6696021,2013,3C-SiC,Passive Implant,Epitaxy,
-"Frewin, C 2016",10.1149/07512.0039ecst,2016,4H-SiC,Insulating and conductive layer,?,<<<
-"Gavalas, M 2025",10.3390/coatings15010106,2025,3C-SiC,Test coupon,Cold-wall,
-"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,a-SiC,Insulating layer,PECVD,
-"Geramifard, N 2022b",10.3390/mi13101692,2022,a-SiC,Insulating layer,PECVD,
-"Geramifard, N 2024",10.1021/acsami.4c11773,2024,a-SiC,Insulating layer,PECVD,
-"Ghazavi, A 2020",10.1016/j.bios.2020.112608,2020,a-SiC,Insuating layer,PECVD,
-"Gonzalez-Gonzalez, M 2023",10.1109/NER52421.2023.10123843,2023,a-SiC,Insulating layer,PECVD,
-"Haghighi, P 2025",10.3390/mi16020113,2025,a-SiC,Insulating layer,PECVD,
-"Hsu, J 2007",10.1016/j.tsf.2007.04.050,2007,a-SiC,Encapsulating layer (Test coupon),PECVD,
-"Hsu, J 2008",10.18494/SAM.2008.515,2008,?,Substrate,?,<<<
-"Jeakle, E 2023",10.3390/mi14030680,2023,a-SiC,Insulating layer,PECVD,
-"Joshi-Imre, A 2019",10.1088/1741-2552/ab1bc8,2019,a-SiC,Encapsulating layer,PECVD,
-"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,?,Intracortical,?,<<<
-"Klein, E 2018",10.3389/fnins.2018.00659,2018,?,Adhesion promoter,PECVD,<<<
-"Knaack, G 2016",10.3389/fnins.2016.00301,2016,a-SiC,Encapsulating layer,PECVD,
-"Kuliasha, C 2018",10.1109/EMBC.2018.8513458,2018,a-SiC,Adhesion promoter,PECVD,
-"Kuliasha, C 2021",10.1002/admt.202100149,2021,a-SiC,Adhesion promoter,PECVD,
-"Mittnacht, A 2019",10.1109/NER.2019.8717179,2019,?,Adhesion promoter,PECVD,<<<
-"Montero Arevalo, B 2023",10.3390/mi14061262,2023,4H-SiC,All-SiC Electrode,Hot-Wall CVD,
-"Nguyen, C 2021",10.1109/EMBC46164.2021.9629701,2021,a-SiC,Encapsulating layer,PECVD,
-"Nguyen, C 2022",10.1109/IEDM45625.2022.10019503,2022,a-SiC,Encapsulating layer,PECVD,
-"Nguyen, C 2024b",10.1109/EMBC53108.2024.10782884,2024,a-SiC,Encapsulating layer,PECVD,
-"Nguyen, T 2022a",10.1021/acsnano.2c03188,2022,3C-SiC,Electrodes (Bioelectronic substrate),?,<<<
-"Nguyen, T 2022b",10.1073/pnas.2203287119,2022,?,Electrodes (Faradaic Layer),Hot-Wall CVD,<<<
-"Panday, R 2006",10.4028/www.scientific.net/MSF.527-529.1107,2006,3C-SiC,Interconnector,LPCVD,
-"Pham, T 2020",10.1002/adfm.202004655,2020,3C-SiC,Flexible device,Hot-Wall CVD,
-"Phan, H 2019",10.1021/acsnano.9b05168,2019,3C-SiC,Flexible device,Hot-Wall CVD,
-"Reyes, M 2013",10.1149/05804.0119ecst,2013,3C-SiC,Test coupon,Hot-Wall CVD,
-Saddow 2011,10.4028/www.scientific.net/MSF.679-680.824,2011,3C-SiC,Test coupon (biocompatibility),PECVD,
-Saddow 2011,10.4028/www.scientific.net/MSF.679-680.824,2011,4H-SiC,Test coupon (biocompatibility),CVD ?,<<<
-Saddow 2011,10.4028/www.scientific.net/MSF.679-680.824,2011,6H-SiC,Test coupon (biocompatibility),CVD ?,<<<
-"Saddow, S 2014a",10.1149/06107.0101ecst,2014,a-SiC,Test coupon (biocompatibility),PECVD,
-"Saddow, S 2014b",10.1109/NMDC.2014.6997419,2014,3C-SiC,Test coupon (biocompatibility),PECVD,
-"Vomero, M 2017a",10.1109/NER.2017.8008347,2017,?,Adhesion promoter,PECVD,<<<
-"Vomero, M 2017b",10.1002/adbi.201700081,2017,?,Adhesion promoter,PECVD,<<<
-"Wu, K 2024",10.1002/adma.202310201,2024,?,Encapsulating layer,PECVD,<<<
+refID,doi,year,SiC_type,SiC_use,SiC_fab_method
+"Abbott, J 2024",10.1016/j.biomaterials.2024.122543,2024,a-SiC,Insulating Layer,PECVD
+"Babaroud, N 2020",10.1109/EMBC44109.2020.9175646,2020,a-SiC,Adhesion Promoter,PECVD
+"Bernardin, E 2018",10.3390/mi9080412,2018,a-SiC,Insulating Layer,PECVD
+"Bernardin, E 2018",10.3390/mi9080412,2018,4H-SiC,Conductive Layer,Hot-Wall CVD
+"Beygi, M 2019",10.3390/mi10070430,2019,3C-SiC,Conductive Layer,Hot-Wall CVD
+"Beygi, M 2019",10.3390/mi10070430,2019,a-SiC,Insulating Layer,PECVD
+"Beygi, M 2021a",10.3390/mi12020126,2021,3C-SiC,Test Coupon,Hot-Wall CVD
+"Bonaventura, G 2019",10.1038/s41598-019-48041-3,2019,3C-SiC,Test Coupon,Hot-Wall CVD
+"Cvancara, P 2019",10.1109/NER.2019.8716920,2019,a-SiC,Adhesion Promoter,PECVD
+"Cvancara, P 2020",10.1088/1741-2552/ab9a9a,2020,a-SiC,Adhesion Promoter,PECVD
+"Deku, F 2018a",10.1088/1741-2552/aa8f8b,2018,a-SiC,Insulating Layer,PECVD
+"Deku, F 2018b",10.3390/mi9100480,2018,a-SiC,Insulating Layer,PECVD
+"Deku, F 2018c",10.1002/jbm.b.34258,2018,a-SiC,Test Coupon,PECVD
+"Diaz-Botia, C 2017a",10.1109/NER.2017.8008319,2017,3C-SiC,Conductive Layer,CVD
+"Diaz-Botia, C 2017a",10.1109/NER.2017.8008319,2017,a-SiC,Insulating Layer,PECVD
+"Diaz-Botia, C 2017b",10.1088/1741-2552/aa7698,2017,3C-SiC,Conductive Layer,LPCVD
+"Diaz-Botia, C 2017b",10.1088/1741-2552/aa7698,2017,a-SiC,Insulating Layer,PECVD
+"Feng, C 2021a",10.1007/978-3-030-65261-6_70,2021,a-SiC,Insulating Layer,PECVD
+"Feng, C 2021b",10.3390/mi12070821,2021,a-SiC,Insulating Layer,PECVD
+"Frewin, C 2011",10.1109/IEMBS.2011.6090582,2011,3C-SiC,Test Coupon (Biocompatibility),CVD
+"Frewin, C 2013",10.1109/NER.2013.6696021,2013,3C-SiC,Test Coupon (Biocompatibility),Hot-Wall CVD
+"Frewin, C 2016",10.1149/07512.0039ecst,2016,4H-SiC,Conductive Layer,Hot-Wall CVD
+"Frewin, C 2016",10.1149/07512.0039ecst,2016,a-SiC,Insulating Layer,PECVD
+"Gavalas, M 2025",10.3390/coatings15010106,2025,3C-SiC,Test Coupon,LPCVD
+"Geramifard, N 2022a",10.1088/1741-2552/ac5bf4,2022,a-SiC,Insulating Layer,PECVD
+"Geramifard, N 2022b",10.3390/mi13101692,2022,a-SiC,Insulating Layer,PECVD
+"Geramifard, N 2024",10.1021/acsami.4c11773,2024,a-SiC,Insulating Layer,PECVD
+"Ghazavi, A 2020",10.1016/j.bios.2020.112608,2020,a-SiC,Insulating Layer,PECVD
+"Gonzalez-Gonzalez, M 2023",10.1109/NER52421.2023.10123843,2023,a-SiC,Insulating Layer,PECVD
+"Haghighi, P 2025",10.3390/mi16020113,2025,a-SiC,Insulating Layer,PECVD
+"Hsu, J 2007",10.1016/j.tsf.2007.04.050,2007,a-SiC,"Encapsulating Layer, Test Coupon",PECVD
+"Hsu, J 2008",10.18494/SAM.2008.515,2008,a-SiC,Substrate,NotReported
+"Jeakle, E 2023",10.3390/mi14030680,2023,a-SiC,Insulating Layer,PECVD
+"Joshi-Imre, A 2019",10.1088/1741-2552/ab1bc8,2019,a-SiC,Encapsulating Layer,PECVD
+"Khajehzadeh, M 2025",10.1088/1741-2552/addb79,2025,a-SiC,Encapsulating Layer,PECVD
+"Klein, E 2018",10.3389/fnins.2018.00659,2018,a-SiC,Adhesion Promoter,PECVD
+"Knaack, G 2016",10.3389/fnins.2016.00301,2016,a-SiC,Encapsulating Layer,PECVD
+"Kuliasha, C 2018",10.1109/EMBC.2018.8513458,2018,a-SiC,Adhesion Promoter,PECVD
+"Kuliasha, C 2021",10.1002/admt.202100149,2021,a-SiC,Adhesion Promoter,PECVD
+"Mittnacht, A 2019",10.1109/NER.2019.8717179,2019,a-SiC,Adhesion Promoter,PECVD
+"Montero Arevalo, B 2023",10.3390/mi14061262,2023,4H-SiC,Conductive Layer,Hot-Wall CVD
+"Montero Arevalo, B 2023",10.3390/mi14061262,2023,a-SiC,Insulating Layer,PECVD
+"Nguyen, C 2021",10.1109/EMBC46164.2021.9629701,2021,a-SiC,Encapsulating Layer,PECVD
+"Nguyen, C 2022",10.1109/IEDM45625.2022.10019503,2022,a-SiC,Encapsulating Layer,PECVD
+"Nguyen, C 2024b",10.1109/EMBC53108.2024.10782884,2024,a-SiC,Encapsulating Layer,PECVD
+"Nguyen, T 2022a",10.1021/acsnano.2c03188,2022,3C-SiC,Conductive Layer,CVD
+"Nguyen, T 2022b",10.1073/pnas.2203287119,2022,3C-SiC,Conductive Layer,Hot-Wall CVD
+"Panday, R 2006",10.4028/www.scientific.net/MSF.527-529.1107,2006,3C-SiC,Conductive Layer,LPCVD
+"Pham, T 2020",10.1002/adfm.202004655,2020,3C-SiC,Conductive Layer,Hot-Wall CVD
+"Phan, H 2019",10.1021/acsnano.9b05168,2019,3C-SiC,Conductive Layer,Hot-Wall CVD
+"Reyes, M 2013",10.1149/05804.0119ecst,2013,3C-SiC,Test Coupon,Hot-Wall CVD
+Saddow 2011,10.4028/www.scientific.net/MSF.679-680.824,2011,3C-SiC,Test Coupon (Biocompatibility),PECVD
+Saddow 2011,10.4028/www.scientific.net/MSF.679-680.824,2011,4H-SiC,Test Coupon (Biocompatibility),CVD
+Saddow 2011,10.4028/www.scientific.net/MSF.679-680.824,2011,6H-SiC,Test Coupon (Biocompatibility),Purchased
+"Saddow, S 2014a",10.1149/06107.0101ecst,2014,a-SiC,Test Coupon (Biocompatibility),PECVD
+"Saddow, S 2014b",10.1109/NMDC.2014.6997419,2014,3C-SiC,Test Coupon (Biocompatibility),PECVD
+"Vomero, M 2017a",10.1109/NER.2017.8008347,2017,a-SiC,Adhesion Promoter,PECVD
+"Vomero, M 2017b",10.1002/adbi.201700081,2017,a-SiC,Adhesion Promoter,PECVD
+"Wu, K 2024",10.1002/adma.202310201,2024,a-SiC,Encapsulating Layer,PECVD
