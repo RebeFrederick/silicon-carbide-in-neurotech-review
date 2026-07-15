@@ -1,41 +1,37 @@
-,ReferenceID,SubjectCount,Species,Strain,Sex,Age,Implant_Region,Implant_Location,Device_Category,Devices_per_subject,Devices_total,Devices_per_subject_average,Implant_duration_days,Implant_duration_weeks,Implant_duration_months
+,ReferenceID,SubjectCount,Species,Strain,Sex,Age,Implant_Region,Implant_Location,Device_Category,Devices_per_subject,Devices_total,Devices_per_subject_average,Implant_Duration_days,Implant_Duration_weeks,Implant_Duration_months
 0,"Abbott, J 2024",7,Rat,Sprague-Dawley,Female,Adult,Brain,Motor Cortex,Intracortical,1,7,1,112,16.0,4
 1,"Abbott, J 2025",7,Rat,Sprague-Dawley,Female,Adult,Brain,Motor Cortex,Intracortical,1,7,1,42,6.0,1
 2,"Cogan, S 2003",1,Rabbit,"New Zealand, White",Not Reported,Not Reported,Skin,Subcutaneous,Material Sample,4,4,4,60,8.6,2
 3,"Cogan, S 2003",1,Rabbit,"New Zealand, White",Not Reported,Not Reported,Skin,Subcutaneous,Material Sample,4,4,4,90,12.9,3
-4,"Cogan, S 2003",2,Rabbit,"New Zealand, White",Not Reported,Not Reported,Brain,Parietal Cortex,Intracortical,4,8,4,150,21.4,5
+4,"Cogan, S 2003",2,Rabbit,"New Zealand, White",Not Reported,Not Reported,Brain,Parietal Cortex,Intracortical,4,8,4,120,21.4,5
 5,"Cvancara, P 2020",4,Rat,Sprague-Dawley,Not Reported,Not Reported,Skin,Subcutaneous,Intraneural,1,4,1,30,4.3,1
 6,"Deku, F 2018a",1,Rat,Long Evans,Male,Not Reported,Brain,Motor Cortex,Intracortical,1,1,1,1,0.0,0
 7,"Deku, F 2018a",1,Zebra Finch,Australian,Male,Not Reported,Brain,Basal Ganglia (Area X),Intracortical,1,1,1,1,0.0,0
 8,"Deku, F 2018b",3,Rat,Long Evans,Not Reported,Not Reported,Brain,Motor Cortex,Intracortical,1,3,1,1,0.0,0
 9,"Diaz-Botia, C 2017b",1,Rat,Long Evans,Male,Adult,Brain,Primary Visual Cortex,ECoG,1,1,1,1,0.0,0
 10,"Diaz-Botia, C 2017b",1,Rat,Long Evans,Male,Adult,Nerve,Sciatic Nerve,Intracortical,1,1,1,1,0.0,0
-11,"Dobariya, A 2022",1,Pig,Yorkshire Cross,Male,4-5 Months,Brain,Somatosensory Cortex,Intracortical,1,1,1,1,0.0,0
-12,"Dobariya, A 2022",1,Pig,Yorkshire Cross,Female,4-5 Months,Brain,Somatosensory Cortex,Intracortical,1,1,1,1,0.0,0
-13,"Faisal, S 2021",5,Human,,Male,Not Reported,Skin,"Forehead, Forearm",Cutaneous,2,10,2,1,0.0,0
-14,"Faisal, S 2021",3,Human,,Female,Not Reported,Skin,"Forehead, Forearm",Cutaneous,2,6,2,1,0.0,0
-15,"Frewin, C 2011",3,Mouse,C57BL/6J,Not Reported,Not Reported,Brain,Hippocampus,Material Sample,1,3,1,35,5.0,1
-16,"Frewin, C 2013",3,Mouse,C57BL/6J,Not Reported,Not Reported,Brain,Hippocampus,Material Sample,1,3,1,35,5.0,1
-17,"Geramifard, N 2022a",5,Rat,Sprague-Dawley,Female,Adult,Brain,Cortex,Intracortical,Not Reported,23,5,1,0.0,0
-18,"Geramifard, N 2024",1,Rat,Sprague-Dawley,Female,Adult,Brain,Motor Cortex,Intracortical,1,1,1,1,0.0,0
-19,"Ghazavi, A 2020",8,Rat,Sprague-Dawley,Male,Adult,Nerve,Cervical Vagus Nerve (Left),Intraneural,1,8,1,1,0.0,0
-20,"Gonzalez-Gonzalez, M 2023",2,Rat,Sprague-Dawley,Male,Adult,Nerve,Sciatic Nerve,Intraneural,1,2,1,1,0.0,0
-21,"Haghighi, P 2025",7,Rat,Sprague-Dawley,Female,Not Reported,Brain,Motor Cortex,Intracortical,1,7,1,112,16.0,4
-22,"Jeakle, E 2023",5,Rat,Sprague-Dawley,Female,Not Reported,Brain,Motor Cortex,Intracortical,1,5,1,112,16.0,4
-23,"Jeakle, E 2024",7,Rat,Sprague-Dawley,Female,Not Reported,Brain,Motor Cortex,Intracortical,1,7,1,112,16.0,4
-24,"Joshi-Imre, A 2019",8,Rat,Long Evans,Male,Adult,Brain,Motor Cortex,Intracortical,1,8,1,210,30.0,7
-25,"Khajehzadeh, M 2025",4,Rat,Sprague-Dawley,Female,5 Months,Brain,Cortex,Intracortical,Not Reported,59,15,1,0.0,0
-26,"Khajehzadeh, M 2025",4,Pig,Not Reported,Not Reported,4-5 Months,Brain,Cortex,Intracortical,Not Reported,49,12,1,0.0,0
-27,"Khajehzadeh, M 2025",1,Non-Human Primate,Rhesus Macaque,Female,13 Years,Brain,Cortex,Intracortical,Not Reported,17,17,1,0.0,0
-28,"Knaack, G 2016",3,Rat,Long-Evans,Female,Not Reported,Brain,Motor Cortex,Intracortical,1,3,1,28,4.0,1
-29,"Knaack, G 2016",5,Rat,Long-Evans,Female,Not Reported,Brain,Motor Cortex,Intracortical,1,5,1,56,8.0,2
-30,"Lin, C 2020",3,Rabbit,Not Reported,Not Reported,Not Reported,Skin,Subcutaneous,Material Sample,4,12,4,84,12.0,3
-31,"Lei, X 2016",3,Rat,Sprague-Dawley,Not Reported,Not Reported,Eye,Sub-Retinal,Retinal,1,3,1,112,16.0,4
-32,"Nguyen, C 2024a",1,Rat,Sprague-Dawley,Not Reported,Not Reported,Brain,Motor Cortex,Intracortical,1,1,1,168,24.0,6
-33,"Nguyen, T 2022a",1,Rat,Sprague-Dawley,Not Reported,Not Reported,Nerve,Sciatic Nerve (Left),Extraneural,1,1,1,1,0.0,0
-34,"Nguyen, T 2022b",3,Rat,Wistar,Male,3 Months,Nerve,Sciatic Nerve (Right),Extraneural,1,3,1,1,0.0,0
-35,"Saddow, S 2014a",1,Pig,Not Reported,Not Reported,Not Reported,Skin,Subcutaneous,Material Sample,12,12,12,30,4.3,1
-36,"Usoro, J 2019",8,Rat,Long-Evans,Male,9-15 Weeks,Brain,Motor Cortex,Intracortical,1,8,1,210,30.0,7
-37,"Vomero, M 2017a",1,Rat,Long Evans,Not Reported,Not Reported,Brain,Somatosensory Cortex,ECoG,1,1,1,42,6.0,1
-38,"Vomero, M 2017b",3,Rat,Long Evans,Not Reported,Not Reported,Brain,Somatosensory Cortex,ECoG,1,3,1,42,6.0,1
-39,"Vomero, M 2017b",3,Rat,Wistar,Not Reported,Adult,Brain,Somatosensory Cortex,ECoG,1,3,1,42,6.0,1
+11,"Dobariya, A 2022",2,Pig,Yorkshire Cross,Not Reported,4-5 Months,Brain,Somatosensory Cortex,Intracortical,1,1,1,1,0.0,0
+12,"Frewin, C 2011",3,Mouse,C57BL/6J,Not Reported,Not Reported,Brain,Hippocampus,Material Sample,1,3,1,35,5.0,1
+13,"Frewin, C 2013",3,Mouse,C57BL/6J,Not Reported,Not Reported,Brain,Hippocampus,Material Sample,1,3,1,35,5.0,1
+14,"Geramifard, N 2022a",5,Rat,Sprague-Dawley,Female,Adult,Brain,Cortex,Intracortical,Not Reported,23,5,1,0.0,0
+15,"Geramifard, N 2024",1,Rat,Sprague-Dawley,Female,Adult,Brain,Motor Cortex,Intracortical,1,1,1,1,0.0,0
+16,"Ghazavi, A 2020",8,Rat,Sprague-Dawley,Male,Adult,Nerve,Cervical Vagus Nerve (Left),Intraneural,1,8,1,1,0.0,0
+17,"Gonzalez-Gonzalez, M 2023",2,Rat,Sprague-Dawley,Male,Adult,Nerve,Sciatic Nerve,Intraneural,1,2,1,1,0.0,0
+18,"Haghighi, P 2025",7,Rat,Sprague-Dawley,Female,Not Reported,Brain,Motor Cortex,Intracortical,1,7,1,112,16.0,4
+19,"Jeakle, E 2023",5,Rat,Sprague-Dawley,Female,Not Reported,Brain,Motor Cortex,Intracortical,1,5,1,112,16.0,4
+20,"Jeakle, E 2024",7,Rat,Sprague-Dawley,Female,Not Reported,Brain,Motor Cortex,Intracortical,1,7,1,112,16.0,4
+21,"Joshi-Imre, A 2019",8,Rat,Long Evans,Male,Adult,Brain,Motor Cortex,Intracortical,1,8,1,210,30.0,7
+22,"Khajehzadeh, M 2025",4,Rat,Sprague-Dawley,Female,5 Months,Brain,Cortex,Intracortical,Not Reported,59,15,1,0.0,0
+23,"Khajehzadeh, M 2025",4,Pig,Not Reported,Not Reported,4-5 Months,Brain,Cortex,Intracortical,Not Reported,49,12,1,0.0,0
+24,"Khajehzadeh, M 2025",1,Non-Human Primate,Rhesus Macaque,Female,13 Years,Brain,Cortex,Intracortical,Not Reported,17,17,1,0.0,0
+25,"Knaack, G 2016",3,Rat,Long-Evans,Female,Not Reported,Brain,Motor Cortex,Intracortical,1,3,1,28,4.0,1
+26,"Knaack, G 2016",5,Rat,Long-Evans,Female,Not Reported,Brain,Motor Cortex,Intracortical,1,5,1,56,8.0,2
+27,"Lei, X 2016",3,Rat,Sprague-Dawley,Not Reported,Not Reported,Eye,Sub-Retinal,Retinal,1,3,1,112,16.0,4
+28,"Nguyen, C 2024a",1,Rat,Sprague-Dawley,Not Reported,Not Reported,Brain,Motor Cortex,Intracortical,1,1,1,168,24.0,6
+29,"Nguyen, T 2022a",1,Rat,Sprague-Dawley,Not Reported,Not Reported,Nerve,Sciatic Nerve (Left),Extraneural,1,1,1,1,0.0,0
+30,"Nguyen, T 2022b",3,Rat,Wistar,Male,3 Months,Nerve,Sciatic Nerve (Right),Extraneural,1,3,1,1,0.0,0
+31,"Saddow, S 2014a",1,Pig,Not Reported,Not Reported,Not Reported,Skin,Subcutaneous,Material Sample,12,12,12,30,4.3,1
+32,"Usoro, J 2019",8,Rat,Long-Evans,Male,9-15 Weeks,Brain,Motor Cortex,Intracortical,1,8,1,210,30.0,7
+33,"Vomero, M 2017a",1,Rat,Long Evans,Not Reported,Not Reported,Brain,Somatosensory Cortex,ECoG,1,1,1,42,6.0,1
+34,"Vomero, M 2017b",3,Rat,Long Evans,Not Reported,Not Reported,Brain,Somatosensory Cortex,ECoG,1,3,1,42,6.0,1
+35,"Vomero, M 2017b",3,Rat,Wistar,Not Reported,Adult,Brain,Somatosensory Cortex,ECoG,1,3,1,42,6.0,1
